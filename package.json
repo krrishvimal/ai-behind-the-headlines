@@ -1,0 +1,13 @@
+{
+  "name": "ai-behind-the-headlines",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive explorer of 36 sourced AI and automation cases, with timelines, evidence and context.",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "package:offline": "node scripts/package-local.mjs",
+    "test": "node scripts/package-local.mjs && node --test tests/*.test.mjs"
+  }
+}
