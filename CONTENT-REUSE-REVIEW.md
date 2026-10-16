@@ -16,7 +16,7 @@ The case data contains public case identities where material to understanding th
 
 ## Policy findings and limits
 
-Selection updated 16 October 2026. Unchanged case checks retain their earlier dates. The current published collection contains 30 case records and 51 source references, including five guide resources. The stricter selection replaces the earlier 36-case release. 10 earlier records are held out because their current source dependencies do not meet this project’s conservative reuse rule. One court-host citation was removed from Mata; the government order remains linked through Justia, whose policy distinguishes government court documents from its own material. No determination that excluded uses were unlawful is made.
+Selection updated 16 October 2026. Unchanged case checks retain their earlier dates. The current published collection contains 30 case records and 58 source references, including 12 guide resources. The stricter selection replaces the earlier 36-case release. 10 earlier records are held out because their current source dependencies do not meet this project’s conservative reuse rule. One court-host citation was removed from Mata; the government order remains linked through Justia, whose policy distinguishes government court documents from its own material. No determination that excluded uses were unlawful is made.
 
  - **digital-strategy.ec.europa.eu — Policy read; CC BY 4.0 with exceptions.** EU-owned content generally CC BY 4.0; source title, EU credit, URL and changes must be identified. Rights in private individuals, third-party works and branding are separate. The Grok record includes attribution, licence link and a change notice; no source media used. [Policy](https://digital-strategy.ec.europa.eu/en/pages/legal-notice)
 
@@ -46,7 +46,7 @@ Selection updated 16 October 2026. Unchanged case checks retain their earlier da
 
  - **oecd.ai — Linked terms read; date and content-type distinctions recorded.** OECD.AI links to these terms. Written content before/after July 2024 and legal instruments have separate conditions; adaptations require a disclaimer and third-party rights remain separate. Guide uses independent learning prompts informed by principles, not reproduced or translated OECD text; no item-specific CC licence assigned. [Policy](https://www.oecd.org/en/about/terms-conditions.html)
 
- - **nist.gov — Policy read; employee/third-party/SRD distinctions.** NIST distinguishes employee-authored works, Standard Reference Data, third-party works and foreign rights. Guide cites the AI RMF and writes independent task-specific prompts; it does not redistribute the framework, data or software. No NIST endorsement claimed. [Policy](https://www.nist.gov/open/license)
+ - **nist.gov — Policy read; employee/third-party/SRD distinctions.** NIST distinguishes employee-authored works, Standard Reference Data, third-party works and foreign rights. Guide cites the AI RMF and writes independent task-specific prompts; it does not redistribute the framework, data or software. No NIST endorsement claimed. Follow-up also checked the NIST copyrights/disclaimers page, Privacy Framework, SSDF and Generative AI Profile. Only federal-author guidance and independent prompts are used; third-party report references and assets are not republished. [Policy](https://www.nist.gov/open/license)
 
  - **copyright.gov — Legal policy read; linking conditions recorded.** Links must not imply affiliation or endorsement; third-party intellectual property must be respected. The guide links to the permissions FAQ and gives independent educational prompts, not copies of the website or a determination that a user's work is lawful. [Policy](https://www.copyright.gov/about/legal.html)
 
@@ -55,6 +55,8 @@ Selection updated 16 October 2026. Unchanged case checks retain their earlier da
  - **robodebt.royalcommission.gov.au — Site-specific CC BY 4.0 policy read; exceptions retained.** Commission-created material is CC BY 4.0 except the coat of arms, Commission logo and third-party content. Required Commonwealth attribution, licence link and changes are recorded. The case uses the HTML mandate and recommendations, not the inaccessible complete report PDF or exhibits. [Policy](https://robodebt.royalcommission.gov.au/copyright)
 
  - **law.justia.com — Policy read; government-document distinction.** Section 18 disclaims Justia copyright in US government works, including court documents. This does not license Justia annotations, software, design or other third-party material. Only facts of the linked order are discussed. [Policy](https://www.justia.com/terms-of-service/)
+
+ - **pib.gov.in — Copyright policy read; conditional free reuse with attribution.** PIB allows reuse without prior approval, requiring accurate, non-misleading presentation and prominent source credit; third-party material is excluded. Only the ministry announcement and an independent scope note are linked, not the full guidelines or source assets. Source credit is visible in the guide. [Policy](https://www.pib.gov.in/ContentPage.aspx?lang=2&menuid=186&reg=3)
 
 ### Held records
 
