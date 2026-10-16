@@ -1,0 +1,183 @@
+{
+  "reviewedOn": "2026-10-16",
+  "policies": {
+    "digital-strategy.ec.europa.eu": {
+      "url": "https://digital-strategy.ec.europa.eu/en/pages/legal-notice",
+      "status": "Policy read; CC BY 4.0 with exceptions",
+      "note": "EU-owned content generally CC BY 4.0; source title, EU credit, URL and changes must be identified. Rights in private individuals, third-party works and branding are separate. The Grok record includes attribution, licence link and a change notice; no source media used."
+    },
+    "judiciary.uk": {
+      "url": "https://www.judiciary.uk/copyright/",
+      "status": "Policy read; Open Government Licence with exceptions",
+      "note": "Crown copyright and OGL apply unless otherwise indicated, excluding Royal Arms and logos. Source title and Crown copyright acknowledgement required. Getty judgment is linked and condensed with an editorial lesson; no exhibits or artwork republished."
+    },
+    "justice.gov": {
+      "url": "https://www.justice.gov/legalpolicies",
+      "status": "Policy read",
+      "note": "Most staff-created material is public domain unless indicated otherwise. Third-party material and insignia have separate restrictions; no blanket worldwide clearance inferred."
+    },
+    "ftc.gov": {
+      "url": "https://www.ftc.gov/policy-notices/website-policy",
+      "status": "Policy copyright section retrieved through search index; direct retrieval failed",
+      "note": "The full indexed copyright section was read on 15 October, improving the earlier excerpt-only review. Most government-created FTC material is public domain; third-party works, seals and implied endorsement are excluded. Attribution is retained."
+    },
+    "ntsb.gov": {
+      "url": "https://www.ntsb.gov/about/Pages/Website-Policies.aspx",
+      "status": "Policy read",
+      "note": "Staff-created reports are generally public domain; embedded third-party works are not automatically reusable. Accuracy and completeness requested. No source photos or seal used."
+    },
+    "priv.gc.ca": {
+      "url": "https://www.priv.gc.ca/en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/",
+      "status": "Policy read; conditional non-commercial reproduction",
+      "note": "Reproduction conditions require accuracy, title and author identification and identification of the website version. Commercial redistribution needs written permission; third-party material and symbols have exceptions. Current use is factual commentary with source links, not a reproduced document."
+    },
+    "oaic.gov.au": {
+      "url": "https://www.oaic.gov.au/about-the-OAIC/copyright",
+      "status": "Policy read; CC BY 4.0 with exceptions",
+      "note": "Website content generally CC BY 4.0; third-party content, logo, coat of arms, trademarks, images and photographs excluded. Required source attribution is added to the case source note; no excluded assets used."
+    },
+    "content.govdelivery.com": {
+      "url": "https://content.govdelivery.com/accounts/USEEOC/bulletins/370170c",
+      "status": "Publisher-specific policy not verified after search; official bulletin read",
+      "note": "This is an EEOC-authored bulletin hosted by GovDelivery. Hosting-provider terms are not treated as an EEOC content licence. General US government-work guidance is not an item-specific clearance. No bulletin body or assets republished."
+    },
+    "nhd.uscourts.gov": {
+      "url": "https://www.nhd.uscourts.gov/",
+      "status": "Publisher-specific policy not verified after homepage and search review",
+      "note": "The cited item is a judicial sanctions order. No court-specific reuse policy was established; no court website or PDF is republished. Justia separately disclaims copyright in government court documents. This does not clear any third-party attachments."
+    },
+    "docs.justia.com": {
+      "url": "https://www.justia.com/terms-of-service/",
+      "status": "Policy read; government-document distinction",
+      "note": "Section 18 disclaims Justia copyright in US government works, including court documents. This does not license Justia annotations, software, design or other third-party material. Only facts of the linked order are discussed."
+    },
+    "info.gov.hk": {
+      "url": "https://www.isd.gov.hk/eng/notices.htm",
+      "status": "ISD publisher policy read; conditional educational reuse",
+      "note": "ISD maintains the government press-release service. Its notice permits non-commercial personal or educational use of government information with accurate reproduction and copyright acknowledgement; media and third-party works have exceptions. Case source note acknowledges HKSAR Government copyright; no source media copied."
+    },
+    "fcc.gov": {
+      "url": "https://wireless.fcc.gov/webpolicies.html",
+      "status": "General website policy read; content reuse permission unresolved",
+      "note": "Accessible policy covers linking, privacy and site operation; it did not establish a content-specific reuse grant for this PDF. Current website-notices retrieval failed. No PDF, seal or source media republished; factual summary and citation only."
+    },
+    "nhpr.org": {
+      "url": "https://www.nhpr.org/terms-of-use-privacy-policy-rights-permissions",
+      "status": "Policy read",
+      "note": "Links encouraged without endorsement; republication and media reuse restricted. A brief factual outcome and link are used, not the report, audio or photograph. No special permission or fair-use determination claimed."
+    },
+    "blogs.microsoft.com": {
+      "url": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/permissions",
+      "status": "General copyrighted-content policy read; no blog-specific reuse grant assigned",
+      "note": "Microsoft retains rights in its content and describes limited permissions and exceptions. The policy is not treated as a general licence for republishing the Tay blog. Only factual discussion and a link are used; no blog body, screenshot or logo copied."
+    },
+    "aclumich.org": {
+      "url": "https://www.aclumich.org/user-agreement/",
+      "status": "Policy read; conditional text distribution",
+      "note": "Some non-commercial text distribution is permitted without editorial changes or misleading presentation and with a copyright notice, unless a page says otherwise. The project presents its own factual account and clearly labels interpretation; it does not claim that the distribution permission licenses a rewritten article."
+    },
+    "gov.uk": {
+      "url": "https://www.gov.uk/help/terms-conditions",
+      "status": "Policy read; Open Government Licence with exceptions",
+      "note": "Most GOV.UK content is under the OGL; other rights are identified separately. Crown copyright and OGL attribution are recorded in the source note. No government branding used or endorsement implied."
+    },
+    "royalcommission.gov.au": {
+      "url": "https://www.royalcommission.gov.au/copyright",
+      "status": "Policy read; CC BY 4.0 with exceptions",
+      "note": "General website licence excludes the coat of arms, Royal Commission logo and third-party content. Commonwealth attribution and a licence link are added to the case source note. Report and exhibits are not redistributed."
+    },
+    "fedcourt.gov.au": {
+      "url": "https://www.fedcourt.gov.au/copyright",
+      "status": "Policy read; speech is not treated as a judgment licence",
+      "note": "Policy distinguishes judgments from other material. The cited Kyrou item is a speech; limited unaltered personal or organisational use is not assumed to grant public adaptation rights. Only a brief factual account and source link are retained; speech text is not republished."
+    },
+    "dfs.ny.gov": {
+      "url": "https://www.dfs.ny.gov/privacy",
+      "status": "Publisher-specific reuse policy not verified after search; privacy policy read",
+      "note": "The privacy policy is not a copyright licence. Homepage and cited press release were read; no applicable reproduction grant was established. New York state material is not automatically covered by the US federal government-work rule. Factual commentary and link only."
+    },
+    "amnesty.org": {
+      "url": "https://www.amnesty.org/en/about-us/permissions/",
+      "status": "Policy read",
+      "note": "General materials licence includes attribution, non-commercial and no-derivatives conditions, with exceptions. No reliance on that licence to republish, adapt or translate its expression. Brief factual discussion and link only; no report or images reproduced."
+    },
+    "wsj.com": {
+      "url": "https://www.wsj.com/policy/subscriber-agreement",
+      "status": "Policy inaccessible; primary policy retrieval failed",
+      "note": "WSJ and Dow Jones policy URLs were attempted; no authoritative full policy was retrieved. Third-party policy mirrors were not used to assert permission. The brief historical account remains explicitly attributed to reporting, not established as a court finding. No article body or assets reproduced. Permission and contractual application unresolved."
+    },
+    "sec.gov": {
+      "url": "https://www.sec.gov/about/webmaster-frequently-asked-questions",
+      "status": "Policy read",
+      "note": "SEC FAQ permits reuse of government-created content and public EDGAR filings, noting exceptions such as stock photographs. Project cites SEC press releases; no stock art, seal or filing attachments copied."
+    },
+    "garanteprivacy.it": {
+      "url": "https://www.garanteprivacy.it/",
+      "status": "Publisher-specific policy not verified after homepage, article and search review",
+      "note": "The relevant public releases were accessible, but an applicable content-reuse licence was not established. No automatic public-domain assumption for Italian regulator material. Brief factual reporting and links only; no translated article or source assets distributed."
+    },
+    "pipc.go.kr": {
+      "url": "https://pipc.go.kr/eng/user/ltn/new/noticeDetail.do?bbsId=BBSMSTR_000000000001&nttId=2819",
+      "status": "Article and English/Korean website notices read; item licence unresolved",
+      "note": "English article and Korean website footer reserve rights. No applicable item-level open licence was established; government status alone is not treated as permission. Only a brief factual account and citation, no release body, attachment or image, are used."
+    },
+    "nhtsa.gov": {
+      "url": "https://www.nhtsa.gov/about-nhtsa/terms-use",
+      "status": "Policy read",
+      "note": "Ownership section permits distribution and copying of public information; no warranty of third-party non-infringement or endorsement is given. Current project uses a factual account and citation, no branding or media."
+    },
+    "theverge.com": {
+      "url": "https://www.pmc.com/terms-of-use",
+      "status": "Linked policy read",
+      "note": "Publisher reserves rights and restricts republication. Original-report facts are discussed briefly, not article text or photographs. No publisher permission or legal clearance inferred."
+    },
+    "wired.com": {
+      "url": "https://www.condenast.com/user-agreement/",
+      "status": "Policy inaccessible (403 previously; retrieval failed again); article read",
+      "note": "Article was rechecked for sale price, earlier credit and apology. No reuse licence assumed from article access. No article body, source photos or interviews quoted verbatim; policy and contractual application remain unresolved."
+    },
+    "christies.com": {
+      "url": "https://www.christies.com/en/about/terms-and-conditions/terms-and-conditions-for-website-use/",
+      "status": "Policy read; source dependency removed",
+      "note": "Terms explicitly restrict public use and summaries. The auction-house source was removed from the published case and its audit locators. Retained facts are supported by WIRED and The Verge; the exact sale-day detail was dropped. No artwork or auction media used."
+    },
+    "oecd.ai": {
+      "url": "https://www.oecd.org/en/about/terms-conditions.html",
+      "status": "Linked terms read; date and content-type distinctions recorded",
+      "note": "OECD.AI links to these terms. Written content before/after July 2024 and legal instruments have separate conditions; adaptations require a disclaimer and third-party rights remain separate. Guide uses independent learning prompts informed by principles, not reproduced or translated OECD text; no item-specific CC licence assigned."
+    },
+    "nist.gov": {
+      "url": "https://www.nist.gov/open/license",
+      "status": "Policy read; employee/third-party/SRD distinctions",
+      "note": "NIST distinguishes employee-authored works, Standard Reference Data, third-party works and foreign rights. Guide cites the AI RMF and writes independent task-specific prompts; it does not redistribute the framework, data or software. No NIST endorsement claimed."
+    },
+    "unesco.org": {
+      "url": "https://connect.unevoc.unesco.org/home/UNEVOC%2BPublications/lang%3Den/akt%3Ddetail/qs%3D6696",
+      "status": "Official publication catalogue licence read; full English licence notice not retrieved",
+      "note": "UNESCO-UNEVOC lists the 2023 guidance as CC BY-SA. Full English repository notice did not render, so version and asset exceptions are not inferred from that catalogue label. No report text, translation or images redistributed; guide offers independent educational prompts and a source link."
+    },
+    "copyright.gov": {
+      "url": "https://www.copyright.gov/about/legal.html",
+      "status": "Legal policy read; linking conditions recorded",
+      "note": "Links must not imply affiliation or endorsement; third-party intellectual property must be respected. The guide links to the permissions FAQ and gives independent educational prompts, not copies of the website or a determination that a user's work is lawful."
+    },
+    "eeoc.gov": {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title17/html/USCODE-2024-title17-chap1-sec105.htm",
+      "status": "Statutory government-work basis read; limited agency-authored source selection",
+      "note": "The original EEOC enforcement release identifies the agency as its author. Selected on the government-work distinction in 17 USC §§101 and 105; this is an editorial assessment, not a publisher-specific grant or a worldwide legal clearance. No imported testimony, third-party assets, logo or article body is reproduced.",
+      "checkedOn": "2026-10-16"
+    },
+    "robodebt.royalcommission.gov.au": {
+      "url": "https://robodebt.royalcommission.gov.au/copyright",
+      "status": "Site-specific CC BY 4.0 policy read; exceptions retained",
+      "note": "Commission-created material is CC BY 4.0 except the coat of arms, Commission logo and third-party content. Required Commonwealth attribution, licence link and changes are recorded. The case uses the HTML mandate and recommendations, not the inaccessible complete report PDF or exhibits.",
+      "checkedOn": "2026-10-16"
+    },
+    "law.justia.com": {
+      "url": "https://www.justia.com/terms-of-service/",
+      "status": "Policy read; government-document distinction",
+      "note": "Section 18 disclaims Justia copyright in US government works, including court documents. This does not license Justia annotations, software, design or other third-party material. Only facts of the linked order are discussed.",
+      "checkedOn": "2026-10-16"
+    }
+  }
+}

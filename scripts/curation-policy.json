@@ -1,0 +1,40 @@
+{
+  "reviewedOn": "2026-10-16",
+  "expectedCases": 30,
+  "caseSourceDomains": [
+    "ntsb.gov",
+    "priv.gc.ca",
+    "ftc.gov",
+    "oaic.gov.au",
+    "justice.gov",
+    "docs.justia.com",
+    "info.gov.hk",
+    "gov.uk",
+    "sec.gov",
+    "nhtsa.gov",
+    "digital-strategy.ec.europa.eu",
+    "judiciary.uk",
+    "eeoc.gov",
+    "robodebt.royalcommission.gov.au",
+    "law.justia.com"
+  ],
+  "guideSourceDomains": [
+    "oecd.ai",
+    "nist.gov",
+    "gov.uk",
+    "copyright.gov",
+    "ftc.gov"
+  ],
+  "heldCases": {
+    "kramer-robocalls": "FCC reuse grant unresolved; NHPR republication conditions do not clearly cover this rewritten account.",
+    "microsoft-tay": "No blog-specific reuse grant established.",
+    "robert-williams": "ACLU copying permission requires unedited attributed text; not treated as a licence for a rewritten account.",
+    "apple-card": "DFS reuse conditions unresolved.",
+    "dutch-childcare": "Amnesty no-derivatives conditions not treated as permission for a rewritten account.",
+    "uk-ceo-voice-2019": "WSJ policy access and reuse conditions unresolved.",
+    "replika-italy": "Garante reuse conditions unresolved.",
+    "foodinho-riders": "Garante reuse conditions unresolved.",
+    "deepseek-korea": "PIPC English article licence unresolved.",
+    "belamy-credit": "WIRED policy inaccessible and The Verge republication restrictions; excluded under the conservative selection rule."
+  }
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "id": "grok-eu-images",
+    "title": "An image tool faced an investigation into sexualised content risks",
+    "entity": "X / Grok",
+    "category": "Output & content harms",
+    "sector": "Social media",
+    "jurisdiction": "European Union",
+    "technology": "Generative image tools",
+    "recordDate": "2026-01-26",
+    "eventPeriod": "Grok deployment on X; investigation announced January 2026",
+    "status": "Reported investigation",
+    "outcomeAsOf": "2026-01-26",
+    "summary": "The European Commission opened a DSA investigation into X’s handling of risks from Grok, including manipulated sexual images and possible child sexual abuse material.",
+    "aiRole": "The investigation concerns image-generation features and how their deployment could spread illegal content.",
+    "affected": "People depicted in manipulated images and users exposed to harmful material. This record gives no victim count.",
+    "outcome": "The Commission announced an investigation into risk assessment and mitigation. This source records an opening, not a final decision or penalty.",
+    "limitation": "The source does not establish every alleged image, a finding against every user, or the present status of all related proceedings. UK investigations and civil lawsuits are not counted as separate cases here. No abusive images are displayed.",
+    "lesson": "Before releasing an image tool, test misuse risks and provide effective reporting and removal routes.",
+    "sources": [
+      {
+        "publisher": "European Commission / European Union",
+        "date": "2026-01-26",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-investigates-grok-and-xs-recommender-systems-under-digital-services-act",
+        "label": "Commission investigates Grok and X’s recommender systems under the Digital Services Act",
+        "type": "Official investigation announcement",
+        "reuseNote": "© European Union, 1995–2026. Source title and URL above. CC BY 4.0, subject to exceptions. Changed: condensed into this project’s factual summary and editorial lesson; no source image reproduced.",
+        "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "review": {
+      "checkedOn": "2026-10-15",
+      "basis": "European Commission investigation announcement",
+      "supportLocators": {
+        "summaryAndAiRole": "Opening and Grok risk paragraphs",
+        "outcome": "Risk assessment and mitigation obligations bullets"
+      },
+      "numberAndScopeChecks": "Opening of investigation, not a finding or fine. No victim estimate. Record date is announcement date.",
+      "correction": "Added with an explicit historical investigation status.",
+      "remainingUncertainty": "No final outcome established by the cited announcement.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+    }
+  },
+  {
+    "id": "getty-stability-uk",
+    "title": "An AI image lawsuit ended with a narrow, mixed ruling",
+    "entity": "Getty Images / Stability AI",
+    "category": "Creative credit & authorship",
+    "sector": "Art and image licensing",
+    "jurisdiction": "United Kingdom",
+    "technology": "Stable Diffusion image generation",
+    "recordDate": "2025-11-04",
+    "eventPeriod": "UK proceedings; judgment delivered 4 November 2025",
+    "status": "Court decision",
+    "outcomeAsOf": "2025-11-04",
+    "summary": "The UK High Court partly upheld Getty’s trademark claim against Stability AI, while rejecting its secondary copyright infringement claim.",
+    "aiRole": "The dispute concerned Stable Diffusion and generated watermarks, alongside copyright allegations about the models.",
+    "affected": "The parties and creative contributors whose rights were at issue. No damages amount or victim total is inferred.",
+    "outcome": "The judge described the successful trademark findings as historical and very limited. Training and output copyright claims had been abandoned; secondary infringement failed.",
+    "limitation": "This is the UK judgment, not a decision on every US claim or on AI training worldwide. The dropped training claim was not a ruling that all training was lawful or unlawful. This record does not establish the current appeal position.",
+    "lesson": "Read the actual outcome. Training rights, generated outputs and trademarks can raise different questions.",
+    "sources": [
+      {
+        "publisher": "High Court of Justice / Courts and Tribunals Judiciary",
+        "date": "2025-11-04",
+        "url": "https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf",
+        "label": "Getty Images v Stability AI [2025] EWHC 2863 (Ch), approved judgment",
+        "type": "Court judgment",
+        "reuseNote": "© Crown copyright. Source title and link above. Licensed under the Open Government Licence v3.0 unless otherwise indicated. Changed: condensed factual account and separate editorial lesson. No artwork or trademark image reproduced.",
+        "reuseLicenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      }
+    ],
+    "review": {
+      "checkedOn": "2026-10-15",
+      "basis": "Approved High Court judgment",
+      "supportLocators": {
+        "summaryAndAiRole": "Paragraphs 8–13; conclusion, paragraphs 757–758",
+        "outcome": "Paragraph 610; conclusion, paragraphs 757–758"
+      },
+      "numberAndScopeChecks": "No 12-million proven-infringement count or damages total. UK proceeding only; abandoned claims distinguished from decided claims.",
+      "correction": "Added the 2025 mixed ruling instead of presenting the original allegations as proven.",
+      "remainingUncertainty": "Current appeals and separate US proceedings not determined by this record.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+    }
+  },
+  {
+    "id": "cambridge-analytica",
+    "title": "Voter profiling began with deceptive data collection",
+    "entity": "Cambridge Analytica",
+    "category": "Privacy & data",
+    "sector": "Political data analytics",
+    "jurisdiction": "United States",
+    "technology": "Data analytics and voter profiling; specific AI method not established",
+    "recordDate": "2019-07-24",
+    "eventPeriod": "Facebook data collection and voter profiling; FTC action in 2019",
+    "status": "Official finding",
+    "outcomeAsOf": "2019-12-06",
+    "summary": "The FTC found that Cambridge Analytica used deceptive practices to collect data from tens of millions of Facebook users for voter profiling and targeting.",
+    "aiRole": "This is a related data-analytics ethics case. The cited FTC account does not identify a particular AI model or demonstrate its effect on election results.",
+    "affected": "Facebook users whose information was collected. The source describes tens of millions; this record does not substitute an exact 87-million count.",
+    "outcome": "The FTC issued an opinion and final order against the company, including restrictions on privacy-related misrepresentations.",
+    "limitation": "The finding concerns deceptive data practices. It does not prove that AI changed the election result or that the 2016 election was a single technical AI incident. Facebook’s separate penalties are not assigned to Cambridge Analytica.",
+    "lesson": "Check consent and data provenance before using personal information to profile or target people.",
+    "sources": [
+      {
+        "publisher": "FTC",
+        "date": "2019-07-24",
+        "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3107-cambridge-analytica-llc-matter",
+        "label": "Cambridge Analytica case summary and dated timeline",
+        "type": "Official enforcement record"
+      },
+      {
+        "publisher": "FTC",
+        "date": "2019-12-06",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2019/12/ftc-issues-opinion-order-against-cambridge-analytica-deceiving-consumers-about-collection-facebook",
+        "label": "FTC opinion and final-order announcement",
+        "type": "Official finding"
+      }
+    ],
+    "review": {
+      "checkedOn": "2026-10-15",
+      "basis": "FTC case timeline and final-order announcement",
+      "supportLocators": {
+        "summaryAndAiRole": "Case Summary; December announcement opening",
+        "outcome": "December announcement, opinion and final-order paragraphs"
+      },
+      "numberAndScopeChecks": "Tens of millions is the source’s scope; no precise 87-million claim. Data analytics is not automatically a demonstrated AI model. Separate Facebook penalties excluded.",
+      "correction": "Added as a related data-analytics case with limited technical attribution.",
+      "remainingUncertainty": "No model-specific causal effect on voting established.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+    }
+  },
+  {
+    "id": "itutorgroup",
+    "title": "Age rules automatically rejected qualified job applicants",
+    "entity": "iTutorGroup",
+    "category": "Discrimination",
+    "sector": "Employment",
+    "jurisdiction": "United States",
+    "technology": "Automated decision system",
+    "recordDate": "2023-09-11",
+    "eventPeriod": "Recruitment practices described in the EEOC lawsuit",
+    "status": "Settlement / final order",
+    "outcomeAsOf": "2023-09-11",
+    "summary": "The EEOC said hiring software automatically rejected women aged 55 or older and men aged 60 or older, affecting more than 200 qualified US applicants.",
+    "aiRole": "Programmed age-screening rules. The source does not establish a machine-learning model.",
+    "affected": "Older applicants for remote tutoring work in the United States.",
+    "outcome": "A $365,000 settlement provided compensation and measures against discriminatory hiring, with EEOC monitoring for at least five years.",
+    "limitation": "This is a related automation case and a settlement, not a trial verdict or proof that AI independently learned discrimination.",
+    "lesson": "Automating a discriminatory rule does not make the decision fair.",
+    "sources": [
+      {
+        "publisher": "US Equal Employment Opportunity Commission",
+        "date": "2023-09-11",
+        "url": "https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit",
+        "label": "iTutorGroup settlement announcement, original EEOC publication",
+        "type": "Official settlement announcement",
+        "reuseNote": "Agency-authored federal enforcement announcement, selected on the US government-work distinction in 17 USC §§101 and 105, not a website-wide licence. Independent factual summary; no third-party testimony, photographs or agency branding reproduced."
+      }
+    ],
+    "review": {
+      "checkedOn": "2026-10-16",
+      "basis": "Original EEOC settlement announcement",
+      "supportLocators": {
+        "summaryAndAiRole": "Opening and programmed age-cutoff paragraphs",
+        "outcome": "Consent decree, relief and monitoring paragraphs"
+      },
+      "numberAndScopeChecks": "Women 55+, men 60+; more than 200 qualified US applicants; USD 365,000. Original release dated 11 September, not the 13 September hosted bulletin.",
+      "correction": "Restored using the original federal agency announcement; date corrected.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings.",
+      "remainingUncertainty": "This is a related automation case and a settlement, not a trial verdict or proof that AI independently learned discrimination."
+    },
+    "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+    "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+  },
+  {
+    "id": "robodebt",
+    "title": "Welfare debt failures led to calls for accountable automation",
+    "entity": "Australian Robodebt scheme",
+    "category": "Governance & oversight",
+    "sector": "Public services",
+    "jurisdiction": "Australia",
+    "technology": "Automated decision system",
+    "eventPeriod": "Robodebt scheme from 2015; Commission report in July 2023",
+    "status": "Official finding",
+    "summary": "The Commission’s founding document acknowledged harm from Robodebt and an invalid debt demand. Its final report recommended safeguards for automated government decisions.",
+    "aiRole": "Related government automation case. The report’s recommendations address review, transparency and scrutiny of algorithms; no LLM role is established.",
+    "affected": "People affected by welfare debt assessment and recovery.",
+    "outcome": "The report recommended plain-language explanations, clear review routes, independent scrutiny and monitoring for fairness and bias.",
+    "limitation": "Recommendations are not proof that reforms were implemented. This record does not establish individual criminal responsibility, compensation totals or a current legal status for every proceeding.",
+    "lesson": "Automating a process does not remove the need for lawful evidence and review.",
+    "sources": [
+      {
+        "publisher": "Royal Commission into the Robodebt Scheme",
+        "date": "2022-08-18",
+        "url": "https://robodebt.royalcommission.gov.au/publications/letters-patent",
+        "label": "Letters Patent establishing the inquiry",
+        "type": "Official inquiry mandate",
+        "reuseNote": "Source: Royal Commission into the Robodebt Scheme. © Commonwealth of Australia 2026. CC BY 4.0 except excluded third-party material and branding. Changed: condensed factual account with a separate editorial lesson. No report, exhibits or source media redistributed.",
+        "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "publisher": "Royal Commission into the Robodebt Scheme",
+        "date": "2023-07-07",
+        "url": "https://robodebt.royalcommission.gov.au/publications/report",
+        "label": "Report publication and recommendations 17.1–17.2",
+        "type": "Official report publication and recommendations",
+        "reuseNote": "Source: Royal Commission into the Robodebt Scheme. © Commonwealth of Australia 2026. CC BY 4.0 except excluded third-party material and branding. Changed: condensed factual account with a separate editorial lesson. No report, exhibits or source media redistributed.",
+        "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "recordDate": "2022-08-18",
+    "outcomeAsOf": "2023-07-07",
+    "review": {
+      "checkedOn": "2026-10-16",
+      "basis": "Commission’s HTML mandate and report recommendations",
+      "supportLocators": {
+        "summaryAndAiRole": "Letters Patent acknowledgements 1–6; report Chapter 17",
+        "outcome": "Report recommendations 17.1 and 17.2"
+      },
+      "numberAndScopeChecks": "Record date follows the 2022 mandate. July 2023 report page notes a corrected edition on 11 July. No compensation or victim total inferred.",
+      "correction": "Restored with a narrower account supported by Commission HTML; restrictive judicial speech removed.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings.",
+      "remainingUncertainty": "Recommendations are not proof that reforms were implemented. This record does not establish individual criminal responsibility, compensation totals or a current legal status for every proceeding."
+    },
+    "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+    "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+  },
+  {
+    "id": "andersen-image-lawsuit",
+    "title": "Artists challenged how image models used their work",
+    "entity": "Andersen and other artists / Stability AI and others",
+    "category": "Creative credit & authorship",
+    "sector": "Art and image generation",
+    "jurisdiction": "United States",
+    "technology": "AI image generation and training data",
+    "recordDate": "2024-08-12",
+    "eventPeriod": "US artists’ lawsuit; August 2024 dismissal-stage ruling",
+    "status": "Court decision",
+    "outcomeAsOf": "2024-08-12",
+    "summary": "Artists alleged that image-generation companies used their work without permission. An August 2024 court order let copyright claims proceed while dismissing other claims.",
+    "aiRole": "The allegations concern training images and the operation of Stable Diffusion and related image products.",
+    "affected": "Artists bringing the claims. This record gives no proven infringement or affected-artist total.",
+    "outcome": "Copyright claims survived dismissal. DMCA claims were dismissed with prejudice; unjust-enrichment claims could be amended. Other claims had different outcomes.",
+    "limitation": "Surviving dismissal is not a finding that infringement occurred. This records the August 2024 order, not the present status of the litigation or a final ruling on AI training.",
+    "lesson": "Check rights before using creative work. Separate an allegation from a court’s final finding.",
+    "sources": [
+      {
+        "publisher": "US District Court, ND California; court order reproduced by Justia",
+        "date": "2024-08-12",
+        "url": "https://law.justia.com/cases/federal/district-courts/california/candce/3%3A2023cv00201/407208/223/",
+        "label": "Order on motions to dismiss, document 223, 12 August 2024",
+        "type": "Court procedural decision",
+        "reuseNote": "Government-authored court order. Justia terms §18 distinguish US government documents from its own protected material. Only the order is used; no Justia summary, annotations, design, artwork or party submission reproduced."
+      }
+    ],
+    "review": {
+      "checkedOn": "2026-10-16",
+      "basis": "Government-authored order, document 223",
+      "supportLocators": {
+        "summaryAndAiRole": "Order pp. 1–5, background and pleading standard",
+        "outcome": "Order p. 33, conclusion; pp. 29–30, evidence and fair-use limits"
+      },
+      "numberAndScopeChecks": "No damages, infringement total or final liability claim. Multiple defendants and different claims distinguished.",
+      "correction": "Added as a dated procedural ruling, not a proven infringement case.",
+      "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+      "interpretation": "Theme and lesson are editorial interpretation, not source findings.",
+      "remainingUncertainty": "Surviving dismissal is not a finding that infringement occurred. This records the August 2024 order, not the present status of the litigation or a final ruling on AI training."
+    }
+  }
+]

@@ -1,0 +1,25 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const project=path.resolve(import.meta.dirname,'..');
+const out=path.resolve(project,'generated');
+await fs.mkdir(out,{recursive:true});
+let html=await fs.readFile(path.join(project,'dist/index.html'),'utf8');
+const css=await fs.readFile(path.join(project,'dist/style.css'),'utf8')+'\n'+await fs.readFile(path.join(project,'dist/polish.css'),'utf8')+'\n'+await fs.readFile(path.join(project,'dist/guide.css'),'utf8');
+const engine=(await fs.readFile(path.join(project,'dist/engine.mjs'),'utf8')).replaceAll('export function','function').replace('export const','const');
+const dataset=await fs.readFile(path.join(project,'dist/data/cases.json'),'utf8');
+let app=await fs.readFile(path.join(project,'dist/app.mjs'),'utf8');
+app=app.replace(/^import [^\r\n]+;\r?\n/gm,'');
+const ethics=(await fs.readFile(path.join(project,'dist/ethics.mjs'),'utf8')).replaceAll('export function','function').replaceAll('export const','const');
+const guide=(await fs.readFile(path.join(project,'dist/guide.mjs'),'utf8')).replace(/^import [^\r\n]+;\r?\n/gm,'');
+// Callback replacements preserve literal dollar sequences in code and source data.
+app=app.replace("const response=await fetch('data/cases.json');if(!response.ok)throw Error('Dataset unavailable');data=await response.json();",()=>`data=${dataset.replaceAll('<','\\u003c')};`);
+html=html.replace('<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="polish.css">',()=>`<style>${css}</style>`);
+html=html.replace('<link rel="stylesheet" href="guide.css">','');
+html=html.replace('<script type="module" src="app.mjs"></script>',()=>`<script type="module">${engine}\n${ethics}\n${guide}\n${app}</script>`);
+html=html.replace('href="data/cases.json" download="ai-headlines-cases.json"',()=>`href="data:application/json;charset=utf-8,${encodeURIComponent(dataset)}" download="ai-headlines-cases.json"`);
+const audit=await fs.readFile(path.join(project,'dist/data/verification-audit.csv'),'utf8');
+html=html.replace('href="data/verification-audit.csv" download="verification-audit.csv"',()=>`href="data:text/csv;charset=utf-8,${encodeURIComponent(audit)}" download="verification-audit.csv"`);
+const rightsReview=await fs.readFile(path.join(project,'dist/data/content-reuse-review.csv'),'utf8');
+html=html.replace('href="data/content-reuse-review.csv" download="content-reuse-review.csv"',()=>`href="data:text/csv;charset=utf-8,${encodeURIComponent(rightsReview)}" download="content-reuse-review.csv"`);
+await fs.writeFile(path.join(out,'AI Behind the Headlines.html'),html);
+console.log('Created standalone HTML with embedded data, CSS and JS.');

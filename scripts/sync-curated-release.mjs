@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url),file=p=>new URL(p,root);
+const read=p=>fs.readFile(file(p),'utf8'),write=(p,t)=>fs.writeFile(file(p),t);
+const data=JSON.parse(await read('dist/data/cases.json'));
+let html=await read('dist/index.html');
+html=html.replace(/01 — \d+/g,'01 — '+data.cases.length).replace(/These \d+ cases were selected/g,'These '+data.cases.length+' cases were selected').replace(/explore \d+ sourced AI/g,'explore '+data.cases.length+' sourced AI').replace(/and \d+ sourced cases/g,'and '+data.cases.length+' sourced cases');
+html=html.replace('Publisher policies were reviewed on 15 October 2026.','Source selection was updated on 16 October 2026. Individual source checks are dated in the downloadable audit.').replace('id="review-date">15 October 2026','id="review-date">16 October 2026');
+await write('dist/index.html',html);
+const pkg=JSON.parse(await read('package.json'));pkg.version=data.version;pkg.description='An AI ethics learning guide with '+data.cases.length+' curated AI and automation case records and reviewed source conditions.';
+await write('package.json',JSON.stringify(pkg,null,2)+'\n');
+let readme=await read('README.md');readme=readme.replace(/and \d+ selected case records/,'and '+data.cases.length+' selected case records');await write('README.md',readme);
+console.log('Synchronized release metadata.');
