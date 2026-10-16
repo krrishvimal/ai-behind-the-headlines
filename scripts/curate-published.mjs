@@ -17,7 +17,8 @@ for(const c of await read('scripts/reviewed-additions.json'))data.cases=data.cas
 const matches=(url,domains)=>domains.some(d=>new URL(url).hostname===d||new URL(url).hostname.endsWith('.'+d));
 for(const c of data.cases)for(const s of c.sources)if(!matches(s.url,policy.caseSourceDomains))throw Error('Source requires a new reuse review: '+s.url);
 if(data.cases.length!==policy.expectedCases)throw Error('Unexpected published case count');
-data.version='3.1.0';
+// Preserve the current release version when refreshing only the case selection.
+data.version=JSON.parse(await fs.readFile(file('package.json'),'utf8')).version;
 data.reviewedOn=policy.reviewedOn;
 data.scope=`An editorial selection of ${data.cases.length} AI and related automated-system cases using reviewed source-reuse conditions. Not a census, representative sample, live feed or list of proven unethical acts.`;
 data.selectionPolicy='Sources with unresolved or incompatible reuse conditions are held out of the published collection. This conservative editorial choice is not a finding of infringement. Licence conditions and third-party exceptions still apply.';

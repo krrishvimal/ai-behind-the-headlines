@@ -149,7 +149,8 @@
     "nist.gov": {
       "url": "https://www.nist.gov/open/license",
       "status": "Policy read; employee/third-party/SRD distinctions",
-      "note": "NIST distinguishes employee-authored works, Standard Reference Data, third-party works and foreign rights. Guide cites the AI RMF and writes independent task-specific prompts; it does not redistribute the framework, data or software. No NIST endorsement claimed."
+      "note": "NIST distinguishes employee-authored works, Standard Reference Data, third-party works and foreign rights. Guide cites the AI RMF and writes independent task-specific prompts; it does not redistribute the framework, data or software. No NIST endorsement claimed. Follow-up also checked the NIST copyrights/disclaimers page, Privacy Framework, SSDF and Generative AI Profile. Only federal-author guidance and independent prompts are used; third-party report references and assets are not republished.",
+      "checkedOn": "2026-10-16"
     },
     "unesco.org": {
       "url": "https://connect.unevoc.unesco.org/home/UNEVOC%2BPublications/lang%3Den/akt%3Ddetail/qs%3D6696",
@@ -177,6 +178,12 @@
       "url": "https://www.justia.com/terms-of-service/",
       "status": "Policy read; government-document distinction",
       "note": "Section 18 disclaims Justia copyright in US government works, including court documents. This does not license Justia annotations, software, design or other third-party material. Only facts of the linked order are discussed.",
+      "checkedOn": "2026-10-16"
+    },
+    "pib.gov.in": {
+      "url": "https://www.pib.gov.in/ContentPage.aspx?lang=2&menuid=186&reg=3",
+      "status": "Copyright policy read; conditional free reuse with attribution",
+      "note": "PIB allows reuse without prior approval, requiring accurate, non-misleading presentation and prominent source credit; third-party material is excluded. Only the ministry announcement and an independent scope note are linked, not the full guidelines or source assets. Source credit is visible in the guide.",
       "checkedOn": "2026-10-16"
     }
   }

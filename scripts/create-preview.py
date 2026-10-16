@@ -15,7 +15,7 @@ d.text((58, 40), 'AI BEHIND THE HEADLINES', font=font('arialbd.ttf', 18), fill=i
 d.line((58, 82, 1142, 82), fill='#d9dfdb', width=1)
 d.text((58, 127), 'Use AI.', font=font('georgia.ttf', 72), fill=ink)
 d.text((58, 210), 'Think it through.', font=font('georgiai.ttf', 53), fill=coral)
-d.text((61, 315), 'Five everyday tasks. Three questions.', font=font('arial.ttf', 23), fill=muted)
+d.text((61, 315), 'Eight everyday tasks. Three questions.', font=font('arial.ttf', 23), fill=muted)
 d.text((61, 349), 'Explore ethics through your choices.', font=font('arial.ttf', 23), fill=muted)
 d.rounded_rectangle((58, 429, 340, 478), radius=1, fill=ink)
 d.text((79, 444), f"{len(dataset['cases'])} sourced case records", font=font('arialbd.ttf', 19), fill='#f6f5f0')
