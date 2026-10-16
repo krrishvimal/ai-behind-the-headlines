@@ -110,3 +110,84 @@ export function buildGuideContext(taskId,answers){
  if(taskId==='coding')notes.push({label:'Security · Scope limit',text:'These steps adapt voluntary risk guidance and secure-development recommendations. They are not a security audit, a complete software-licence review or approval to operate on a live system.',source:'software'});
  return notes;
 }
+
+
+// Source labels explain the reference, not the visitor's legal obligations.
+const guideSourceLabels={
+ oecd:['International ethical principles','International reference','Not law. Anyone can use these principles as an ethical reference; local requirements still matter.'],
+ nist:['Voluntary framework','US-issued; usable internationally','This is risk-management guidance, not legislation or legal approval.'],
+ education:['Education guidance','England','Used as a reference for this suggestion. Check your own institution’s policy and local requirements.'],
+ copyright:['Copyright guidance','United States','Explains US permissions and exceptions. It does not decide your rights or the law in other countries.'],
+ endorsements:['Endorsement guidance','United States','Explains US endorsement expectations. This is not a worldwide compliance assessment.'],
+ privacy:['Voluntary privacy framework','US-issued; usable internationally','A practical risk-management reference, not a privacy-law compliance test.'],
+ software:['Secure-development recommendations','US-issued; usable internationally','A security reference, not a security certificate or legal approval.'],
+ genai:['Voluntary AI risk guidance','US-issued; usable internationally','A risk reference, not a complete security assessment or legislation.'],
+ voice:['Consumer safety advice','United States','Independent callback advice used as a practical safeguard. This article is not a universal legal rule.'],
+ transparency:['Guidance about legal obligations','European Union','Explains certain EU AI Act obligations. Roles, scope and exceptions matter; this tool does not decide whether they apply to you.'],
+ reviewsrule:['Guidance about a legal rule','United States','Explains a US business rule. Scope and exceptions matter; this tool does not decide whether it applies to you.'],
+ india:['General governance resource','India','Optional policy background, not a task-specific permission or compliance checklist.']
+};
+export function getGuideSourceContext(id){
+ const source=ethicsSources[id],labels=guideSourceLabels[id];
+ if(!source||!labels)throw Error('Unsupported guide source');
+ return {...source,type:labels[0],geography:labels[1],limit:labels[2],reviewedOn:ethicsReviewedOn};
+}
+
+// Fictional teaching situations. Responses describe possible concerns, not forecasts.
+export const ethicsScenarios=[
+ {id:'assignment',name:'The assignment is due',tag:'Learning & honesty',
+  story:'Your group assignment is due tomorrow. AI has produced a polished draft, including references that no one has opened. Your teammates want to submit it.',
+  people:['You and your learning','Teammates sharing responsibility','The teacher assessing the work'],
+  contexts:[{id:'unchecked',label:'The course policy has not been checked.',detail:'You do not yet know which kinds of AI help are allowed.'},{id:'limited',label:'The teacher allows explanations, but not AI-written submissions.',detail:'For this fictional exercise, the assignment policy is clear: use AI to learn, then write your own work.'}],
+  choices:[{id:'submit',label:'Submit the draft as it is.'},{id:'reword',label:'Change the wording and submit it.'},{id:'review',label:'Check the policy and sources, then do our own work.'}],
+  source:'education',caseId:'mata',caseLabel:'A real case: invented legal citations',caseContext:'Mata v. Avianca concerns lawyers and court filings, not a student assignment. It illustrates the risk of relying on unchecked AI references.',
+  responses:{
+   unchecked:{
+    submit:{title:'A polished answer can still be wrong.',concern:'The references could be invented, and you have not established whether this use is allowed. Your teammates may share the consequences of submitting it.',next:'Pause submission. Read the assignment policy, open each source and agree with your teammates how to produce work you can explain.'},
+    reword:{title:'Different words do not resolve the main questions.',concern:'Rephrasing does not verify the references, show your understanding or establish permission to submit AI-written work.',next:'Check what the assignment allows. Use genuine sources and your own reasoning; acknowledge allowed AI help as your institution requires.'},
+    review:{title:'You are checking permission and understanding.',concern:'Checking is useful only if the group follows what it finds. A source can exist and still fail to support the claim.',next:'Confirm permitted assistance, read the sources in context and make sure each teammate can explain their contribution.'}},
+   limited:{
+    submit:{title:'This does not fit the stated assignment policy.',concern:'In this fictional situation, submitting the AI-written draft conflicts with the teacher’s stated restriction. The references are still unchecked.',next:'Use permitted explanations to learn. Write the submission yourselves and verify any sources you cite.'},
+    reword:{title:'Rewording does not change the stated restriction.',concern:'The policy allows learning support, not an AI-written submission. Changing the surface wording does not establish your own reasoning.',next:'Set the generated draft aside. Build your own argument from course materials and checked sources.'},
+    review:{title:'Keep the permitted help separate from the submission.',concern:'The teacher’s permission covers explanations in this scenario. It does not remove the need to check facts or do the assessed work yourselves.',next:'Ask AI for practice or explanations if useful, then write your own answer and follow the course’s acknowledgement requirements.'}}
+  }},
+ {id:'payment',name:'The voice sounds familiar',tag:'Identity & trust',
+  story:'A caller sounds like your manager. They ask you to transfer money urgently to a new account and say there is no time for the usual approval process.',
+  people:['The person asked to pay','The organisation and its funds','The person being impersonated'],
+  contexts:[{id:'voice',label:'You have only the incoming call.',detail:'A familiar voice is the main reason you believe the request.'},{id:'message',label:'A matching message arrives from the manager’s usual chat account.',detail:'This adds another signal, but the account could be compromised. The request still bypasses normal approval.'}],
+  choices:[{id:'pay',label:'Send the money because the voice sounds right.'},{id:'provided',label:'Call back on the number the caller gives me.'},{id:'trusted',label:'Pause and verify through a contact route I already trust.'}],
+  source:'voice',caseId:'hong-kong-deepfake',caseLabel:'A real case: a reported deepfake payment scam',caseContext:'The Hong Kong record describes pre-recorded deepfake clips without interaction and a reported payment fraud. It is not the fictional phone call above.',
+  responses:{
+   voice:{
+    pay:{title:'A familiar voice is not proof of identity.',concern:'The caller could be impersonating your manager. Urgency can pressure you to skip safeguards, and transferred money may be difficult to recover.',next:'Do not act on the call alone. Contact your manager through details you already know and follow the normal payment approval process.'},
+    provided:{title:'The callback route may belong to the same caller.',concern:'A number supplied in a suspicious request does not independently establish who you are speaking to.',next:'Use an existing trusted contact record instead. Verify the request and account change through the organisation’s normal process.'},
+    trusted:{title:'You are separating familiarity from verification.',concern:'A callback helps only if the route is independently trusted. Verification still needs the usual approval and account checks.',next:'Use known contact details, confirm the request and new bank details, and keep the required approvals before paying.'}},
+   message:{
+    pay:{title:'Two matching messages can still share a compromised source.',concern:'The extra chat message does not prove the payment is authorised. A compromised account and cloned voice could support the same deception.',next:'Pause the payment. Independently contact the manager and follow the normal account-change and payment approval process.'},
+    provided:{title:'The supplied number is still not independent verification.',concern:'The chat message adds context, but calling a new number supplied with the request can keep you inside the same untrusted chain.',next:'Use contact details already held in a trusted record and verify the account change through the normal approval route.'},
+    trusted:{title:'Keep the independent check even when the story looks consistent.',concern:'A familiar chat account can be compromised. Matching signals do not replace authorisation checks.',next:'Verify through a known route outside the incoming request, check the new account details and retain the required approvals.'}}
+  }},
+ {id:'portrait',name:'A friend’s photo, a public post',tag:'Permission & context',
+  story:'You want to use a friend’s photo to make an AI-edited promotional image for a public social media post. The result could make it look as if your friend supports the product.',
+  people:['Your friend and their reputation','People who see the promotion','The creator or rights holder of the photo'],
+  contexts:[{id:'none',label:'You have not asked your friend.',detail:'The original photo is publicly visible online. That does not establish agreement to this new use.'},{id:'private',label:'Your friend agreed to a private AI edit for fun.',detail:'They have not agreed to a public promotion or endorsement. Permission for one context is not permission for every context.'}],
+  choices:[{id:'post',label:'Post it because the original photo is already online.'},{id:'label',label:'Post it with an AI-generated label.'},{id:'ask',label:'Confirm this use with my friend and check the photo’s rights.'}],
+  source:'oecd',caseId:'grok-eu-images',caseLabel:'A related record: an EU investigation into image risks',caseContext:'The Grok record is an investigation into sexualised image risks, not a ruling on this promotional edit. It illustrates why people affected by synthetic images matter.',
+  responses:{
+   none:{
+    post:{title:'Publicly visible does not mean agreed to this use.',concern:'Your friend could be portrayed as endorsing something they do not support. The photo may also have rights you have not checked.',next:'Ask about the intended edit, public audience and promotion. Check the photo’s rights and relevant local requirements, or choose a fictional subject and material with clear rights.'},
+    label:{title:'A label explains the edit, not your friend’s agreement.',concern:'Viewers may still infer endorsement, and a label does not resolve privacy, reputation or rights concerns.',next:'Confirm the planned promotional use and relevant rights before publishing. Make the context clear; do not imply a real endorsement that did not happen.'},
+    ask:{title:'Check the specific use, not just the image.',concern:'Your friend may not own the photo’s copyright. Agreement to appear and rights to use the photo are separate questions.',next:'Explain the edit, audience and product context. Check the relevant rights and local requirements, and review whether the result implies an endorsement.'}},
+   private:{
+    post:{title:'The audience and purpose have changed.',concern:'Agreement to a private edit does not establish agreement to a public promotion. Being online does not resolve that gap.',next:'Ask again about public promotional use. Confirm the photo’s rights and avoid suggesting an endorsement your friend has not given.'},
+    label:{title:'Disclosure does not extend the earlier agreement.',concern:'The AI label does not turn private-use permission into permission for a public promotion. Viewers could still misunderstand the endorsement.',next:'Confirm the new audience and commercial context before posting, and check rights and relevant local requirements.'},
+    ask:{title:'You are revisiting permission when the context changes.',concern:'Private-use agreement is a useful starting point, but it does not settle the public promotion or the photo’s copyright.',next:'Get a clear understanding of the new use, check the relevant rights and review the final image and caption together.'}}
+  }}
+];
+export function buildScenarioResponse(scenarioId,contextId,choiceId){
+ const scenario=ethicsScenarios.find(s=>s.id===scenarioId);
+ const context=scenario?.contexts.find(c=>c.id===contextId),choice=scenario?.choices.find(c=>c.id===choiceId);
+ const response=scenario?.responses[contextId]?.[choiceId];
+ if(!scenario||!context||!choice||!response)throw Error('Choose a supported scenario, context and response');
+ return {scenario,context,choice,...response,source:getGuideSourceContext(scenario.source),reviewedOn:ethicsReviewedOn};
+}
