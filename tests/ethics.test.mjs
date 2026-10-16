@@ -31,7 +31,7 @@ test('all 216 supported answer combinations produce sourced checklists and valid
    const answers=Object.fromEntries(task.questions.map((q,i)=>[q.id,[a,b,c][i]]));
    const result=buildEthicsChecklist(task.id,answers);
    assert.equal(result.items.length,5);
-   assert.equal(result.answers.length,3);
+   assert.equal(result.answers.length,3);assert.ok(!result.context.some(n=>n.source==='india'));assert.match(result.context[1].text,/country, school or workplace/);assert.equal(result.furtherReading.length,1);for(const note of result.furtherReading)assert.ok(ethicsSources[note.source]);
    assert.ok(result.context.length>=3);for(const note of result.context){assert.ok(note.label&&note.text);if(note.source)assert.ok(ethicsSources[note.source]);}for(const item of result.items){assert.ok(item.action&&item.title&&item.why);assert.ok(ethicsSources[item.source]);assert.equal(new URL(ethicsSources[item.source].url).protocol,'https:');}
    combinations++;
   }
@@ -85,6 +85,6 @@ test('consequential choices and unknowns change the suggested actions',()=>{
  const office=buildEthicsChecklist('office',{data:'private',tool:'unreviewed',review:'auto'});assert.match(office.items[1].action,/Pause the upload/);assert.match(office.items[2].action,/Add a review step/);assert.ok(office.context.some(n=>n.source==='privacy'));
  const coding=buildEthicsChecklist('coding',{environment:'live',permissions:'action',checks:'untested'});assert.match(coding.items[0].action,/separate test environment/);assert.match(coding.items[1].action,/approval for deletion/);assert.match(coding.items[2].action,/Do not treat generated code as verified/);assert.equal(coding.task.cases.length,0);assert.match(coding.task.caseContext,/No directly matched/);
  const voice=buildEthicsChecklist('voice',{subject:'unclear',audience:'unlabelled',purpose:'payment'});assert.match(voice.items[0].action,/ethical safeguard/);assert.match(voice.items[1].action,/disclosure rules/);assert.match(voice.items[2].action,/independently verified approval/);assert.ok(voice.context.some(n=>n.source==='transparency'));
- for(const task of ethicsTasks){const r=buildEthicsChecklist(task.id,Object.fromEntries(task.questions.map(q=>[q.id,q.options[0][0]])));assert.equal(r.reviewedOn,'2026-10-16');assert.match(r.context[0].text,/not legal approval/);assert.ok(r.context.some(n=>n.source==='india'));}
+ for(const task of ethicsTasks){const r=buildEthicsChecklist(task.id,Object.fromEntries(task.questions.map(q=>[q.id,q.options[0][0]])));assert.equal(r.reviewedOn,'2026-10-16');assert.match(r.context[0].text,/not legal approval/);assert.ok(!r.context.some(n=>n.source==='india'));assert.match(r.context[1].text,/country, school or workplace/);assert.equal(r.furtherReading[0].source,'india');assert.match(r.furtherReading[0].text,/not an education-specific policy/);}
  });
  test('each new answer option changes the relevant recommendation',()=>{for(const id of ['office','coding','voice']){const task=ethicsTasks.find(t=>t.id===id),base=Object.fromEntries(task.questions.map(q=>[q.id,q.options[0][0]]));for(const q of task.questions){const outputs=q.options.map(([value])=>JSON.stringify(buildEthicsChecklist(id,{...base,[q.id]:value}).items));assert.equal(new Set(outputs).size,3,id+': '+q.id);}}});
