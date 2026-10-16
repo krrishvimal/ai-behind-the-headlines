@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {ethicsTasks,ethicsSources,buildEthicsChecklist} from '../dist/ethics.mjs';
+import {ethicsTasks,ethicsSources,buildEthicsChecklist,getGuideSourceContext,ethicsScenarios,buildScenarioResponse} from '../dist/ethics.mjs';
 const records=JSON.parse(fs.readFileSync(new URL('../dist/data/cases.json',import.meta.url))).cases;
 
 test('public guide source audit matches every cited resource and approved host',()=>{
@@ -88,3 +88,32 @@ test('consequential choices and unknowns change the suggested actions',()=>{
  for(const task of ethicsTasks){const r=buildEthicsChecklist(task.id,Object.fromEntries(task.questions.map(q=>[q.id,q.options[0][0]])));assert.equal(r.reviewedOn,'2026-10-16');assert.match(r.context[0].text,/not legal approval/);assert.ok(!r.context.some(n=>n.source==='india'));assert.match(r.context[1].text,/country, school or workplace/);assert.equal(r.furtherReading[0].source,'india');assert.match(r.furtherReading[0].text,/not an education-specific policy/);}
  });
  test('each new answer option changes the relevant recommendation',()=>{for(const id of ['office','coding','voice']){const task=ethicsTasks.find(t=>t.id===id),base=Object.fromEntries(task.questions.map(q=>[q.id,q.options[0][0]]));for(const q of task.questions){const outputs=q.options.map(([value])=>JSON.stringify(buildEthicsChecklist(id,{...base,[q.id]:value}).items));assert.equal(new Set(outputs).size,3,id+': '+q.id);}}});
+
+test('each source explicitly identifies geography, source type and practical limits',()=>{
+ for(const id of Object.keys(ethicsSources)){const source=getGuideSourceContext(id);assert.ok(source.type.length>5);assert.ok(source.geography.length>3);assert.ok(source.limit.length>30);assert.equal(source.url,ethicsSources[id].url);assert.equal(source.reviewedOn,'2026-10-16');}
+ assert.match(getGuideSourceContext('oecd').type,/ethical principles/);
+ assert.match(getGuideSourceContext('oecd').limit,/Not law/);
+ assert.equal(getGuideSourceContext('education').geography,'England');
+ assert.match(getGuideSourceContext('education').limit,/own institution/);
+ assert.match(getGuideSourceContext('transparency').limit,/scope and exceptions/);
+ assert.throws(()=>getGuideSourceContext('invented'),/Unsupported/);
+});
+
+test('all 18 fictional scenario responses are distinct, sourced and linked to reviewed cases',()=>{
+ assert.equal(ethicsScenarios.length,3);let count=0;
+ for(const scenario of ethicsScenarios){
+  assert.equal(scenario.contexts.length,2);assert.equal(scenario.choices.length,3);assert.equal(scenario.people.length,3);
+  assert.ok(records.some(record=>record.id===scenario.caseId));assert.ok(scenario.caseContext.length>70);
+  const outputs=[];
+  for(const context of scenario.contexts)for(const choice of scenario.choices){const result=buildScenarioResponse(scenario.id,context.id,choice.id);assert.ok(result.title&&result.concern&&result.next);assert.ok(result.concern.length>60&&result.next.length>60);assert.equal(result.source.url,ethicsSources[scenario.source].url);outputs.push(JSON.stringify([result.title,result.concern,result.next]));count++;}
+  assert.equal(new Set(outputs).size,6,scenario.id+': repeated feedback');
+ }
+ assert.equal(count,18);
+ assert.match(buildScenarioResponse('assignment','limited','reword').concern,/policy allows learning support/);
+ assert.match(buildScenarioResponse('payment','message','pay').concern,/does not prove/);
+ assert.match(buildScenarioResponse('portrait','private','label').concern,/does not turn private-use permission/);
+});
+
+test('unknown scenario inputs cannot manufacture advice',()=>{
+ for(const args of [['missing','voice','pay'],['payment','missing','pay'],['payment','voice','missing'],[undefined,undefined,undefined]])assert.throws(()=>buildScenarioResponse(...args),/supported scenario/);
+});
