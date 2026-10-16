@@ -19,7 +19,7 @@ test('policy follow-up covers every current host without inventing item licences
  const keys=lines.shift().split(',');
  const records=lines.filter(Boolean).map(line=>Object.fromEntries([...line.matchAll(/"((?:[^"]|"")*)"/g)].map((m,i)=>[keys[i],m[1].replaceAll('""','"')])));
  const review={sourceReferences:records.length,records,policies:JSON.parse(read('../scripts/source-policy-review.json')).policies};
- assert.equal(review.sourceReferences,51);
+ assert.equal(review.sourceReferences,58);
  for(const r of review.records){assert.ok(r.policyUrl);assert.ok(!/^Publisher-specific policy not verified$/.test(r.policyStatus));assert.match(r.permission,/No publisher-specific permission/);}
  assert.match(review.policies['wsj.com'].status,/inaccessible/);
  assert.match(review.policies['pipc.go.kr'].status,/unresolved/);
