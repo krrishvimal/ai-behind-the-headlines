@@ -1,0 +1,122 @@
+{
+  "reviewedOn": "2026-10-16",
+  "scope": "AI-assisted editorial source and output review. Not independent legal advice, an exhaustive legal survey or source-organisation endorsement.",
+  "tasks": [
+    "hiring",
+    "studying",
+    "images",
+    "marketing",
+    "support",
+    "office",
+    "coding",
+    "voice"
+  ],
+  "combinations": 216,
+  "sources": {
+    "oecd": {
+      "title": "OECD AI Principles",
+      "url": "https://oecd.ai/en/ai-principles",
+      "kind": "International principles",
+      "scope": "Principles on fairness, privacy, transparency, safety and accountability. These are not a worldwide legal code.",
+      "checkedOn": "2026-10-16",
+      "locator": "Values-based principles: fairness/privacy, transparency, safety, accountability, sustainable development.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "nist": {
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "kind": "Voluntary framework",
+      "scope": "Voluntary AI risk-management framework, not legislation. Recommendations do not establish compliance with employment, privacy or other laws.",
+      "checkedOn": "2026-10-16",
+      "locator": "Overview: voluntary use; AI RMF 1.0 and the Generative AI Profile. Revision in progress is not treated as a new final standard.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "education": {
+      "title": "Department for Education: generative AI in education",
+      "url": "https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education/generative-artificial-intelligence-ai-in-education",
+      "scope": "England guidance on privacy, intellectual property, assessment and professional judgement. Your institution and local rules may differ. © Crown copyright, Open Government Licence v3.0. These are independent educational prompts, not an official checklist.",
+      "checkedOn": "2026-10-16",
+      "locator": "Applies to England; using AI safely/effectively and responsibly. Institution permission cannot be inferred.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "copyright": {
+      "title": "US Copyright Office: using someone else’s work",
+      "url": "https://www.copyright.gov/help/faq/faq-fairuse.html",
+      "scope": "US guidance on permissions and exceptions. It does not decide whether your use is lawful or how other countries treat it.",
+      "checkedOn": "2026-10-16",
+      "locator": "Permission and fair-use FAQ. Exceptions are context-specific; not an output infringement determination.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "endorsements": {
+      "title": "FTC: endorsements and testimonials",
+      "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+      "scope": "US guidance on honest endorsements and relevant disclosures. Not a worldwide compliance assessment.",
+      "checkedOn": "2026-10-16",
+      "locator": "Genuine experiences and material connections. Distinct from the separate Consumer Reviews Rule.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "privacy": {
+      "title": "NIST Privacy Framework",
+      "url": "https://www.nist.gov/privacy-framework",
+      "kind": "Voluntary framework",
+      "scope": "Privacy risk-management guidance. This is not a privacy-law compliance test or permission to upload personal data.",
+      "checkedOn": "2026-10-16",
+      "locator": "Framework overview and voluntary risk-management purpose. No legal compliance inferred from adoption.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "software": {
+      "title": "NIST Secure Software Development Framework",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "kind": "Security recommendations",
+      "scope": "Secure development recommendations, adapted here into practical checks. No generated code or deployment is certified secure.",
+      "checkedOn": "2026-10-16",
+      "locator": "SP 800-218 publication abstract and secure-development recommendations. Tailored steps are editorial adaptations, not a full control implementation.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "genai": {
+      "title": "NIST Generative AI Profile",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "kind": "Voluntary risk guidance",
+      "scope": "NIST AI 600-1, July 2024, especially section 2.9 on information security. These are independent learning prompts, not a complete implementation of the profile.",
+      "checkedOn": "2026-10-16",
+      "locator": "AI 600-1, section 2.9, PDF pages 13–14; indirect prompt injection and risks to connected systems. No mitigation is described as complete protection.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "voice": {
+      "title": "FTC: AI voice-cloning scams",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+      "kind": "US consumer safety guidance",
+      "scope": "FTC staff advice on independently verifying familiar-sounding callers. No public comments or source audio reproduced; no universal consent law inferred.",
+      "checkedOn": "2026-10-16",
+      "locator": "FTC staff article opening and independent callback advice; public comments excluded.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "transparency": {
+      "title": "European Commission: AI transparency obligations",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations",
+      "kind": "EU legal guidance",
+      "scope": "Article 50 transparency obligations for certain providers and deployers apply from 2 August 2026. Scope, roles and exceptions matter; not every AI-assisted edit requires the same label. © European Union, 1995–2026, CC BY 4.0 with exceptions. Changed: brief factual scope note and independent task suggestions; no source assets reproduced.",
+      "checkedOn": "2026-10-16",
+      "locator": "Commission guidance: Article 50 date, provider vs deployer obligations and scope/exception discussion; official service-desk Article 50 text, including creative-work disclosure limits, also inspected.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "reviewsrule": {
+      "title": "FTC: Consumer Reviews and Testimonials Rule Q&A",
+      "url": "https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers",
+      "kind": "US rule guidance",
+      "scope": "US business conduct involving reviews and testimonials; the rule took effect on 21 October 2024. Staff Q&A is not definitive or comprehensive and does not provide a safe harbor. It does not ban all AI avatars or fictional advertising.",
+      "checkedOn": "2026-10-16",
+      "locator": "General scope and staff-guidance limits; §465.2 fake/false testimonials, avatars and fictional dramatizations; separate endorsement-disclosure rules.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    },
+    "india": {
+      "title": "MeitY / PIB: India AI Governance Guidelines announcement",
+      "url": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=2186639&lang=2&reg=3",
+      "kind": "India policy guidance",
+      "scope": "Source: Press Information Bureau, Government of India, Ministry of Electronics & IT, 5 November 2025. A governance-policy resource, not a substitute for checking applicable laws, sector rules or organisational requirements. Independently condensed scope note; no source image or complete report reproduced.",
+      "checkedOn": "2026-10-16",
+      "locator": "Ministry announcement, 5 November 2025, framework components and foundational-reference description. Full underlying guidelines and all Indian statutes are not claimed to be audited.",
+      "projectUse": "Independent task suggestions and short scope notes; no source article, original image or complete framework redistributed."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
+  "version": "3.2.0",
   "reviewedOn": "2026-10-16",
   "scope": "An editorial selection of 30 AI and related automated-system cases using reviewed source-reuse conditions. Not a census, representative sample, live feed or list of proven unethical acts.",
   "dateBasis": "recordDate is the publication date of the earliest source included here, not necessarily when the incident happened or was first reported anywhere. eventPeriod describes the underlying events separately.",
