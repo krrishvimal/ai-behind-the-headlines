@@ -6,7 +6,7 @@ Research, summaries, learning prompts and code were prepared with AI assistance.
 
 ## Current release
 
-Version 3.2.0 contains 30 case records. The earlier source-selection pass reduced 36 records to 24, then added three, giving 27. The 16 October 2026 follow-up restores iTutorGroup and Robodebt with new source packages and adds Andersen’s August 2024 procedural ruling, giving 30. Ten earlier records remain held out. No target count overrides evidence and source-selection requirements.
+Version 3.3.0 contains 30 case records. The earlier source-selection pass reduced 36 records to 24, then added three, giving 27. The 16 October 2026 follow-up restores iTutorGroup and Robodebt with new source packages and adds Andersen’s August 2024 procedural ruling, giving 30. Ten earlier records remain held out. No target count overrides evidence and source-selection requirements.
 
 Individual checks retain their actual dates; a collection update does not certify that every case was freshly checked or is legally current. The two restored cases concern related automation, not demonstrated LLM incidents. Andersen is a dated procedural ruling, not a finding of infringement.
 
@@ -24,7 +24,7 @@ The guide runs locally in the browser with no AI API, account, document upload, 
 
 The source of truth is dist/data/cases.json. Charts count the selected records, not victims or proven violations. Allegations, investigations, settlements, findings and reversals are distinguished. One primary editorial theme per record avoids double counting. Public record dates follow the earliest included source; event periods are separate. Outcome dates describe cited evidence, not a guarantee of the current legal status.
 
-Sources are selected using documented reuse conditions or explicit government-document distinctions; exceptions and attribution requirements still apply. No original article bodies, database imports, artwork, photographs, video or publisher logos are redistributed. Citations are not permission or endorsement. This is not a guarantee of zero errors or complete legal compliance.
+Sources are selected using documented reuse conditions or explicit government-document distinctions; exceptions and attribution requirements still apply. No original article bodies, artwork, photographs, video or publisher logos are redistributed. The separate global explorer adapts AIID incident metadata and classifications under CC BY-SA 4.0, with visible attribution, limitations and a downloadable derived dataset. Citations are not permission or endorsement. This is not a guarantee of zero errors or complete legal compliance.
 
 ## Run and verify
 
@@ -47,3 +47,9 @@ The 16 October evening update adds three fictional situations: assessed work, an
 Every checklist suggestion now shows its source type, geography, practical limit and context review date next to its source link. Country-specific source notes appear below the checklist with the bibliography, not as universal rules at the top. The general local-rule reminder and optional India reading remain separate. Downloads retain the source labels and context. OECD principles are labelled ethical references, not law. The review date is not the original source's publication date.
 
 The proposed broad global dataset/map is deferred in favour of the user's later choice of scenarios. No external incident dataset was imported. The 30 reviewed case records remain unchanged.
+
+## External global explorer
+
+A separate fixed AI Incident Database export retrieved on 16 October 2026 contains 1,743 distinct incident IDs. Only 140 have usable country annotations in CSETv1, across 25 country/territory labels; 1,603 remain unmapped. These source records are not independently verified by this project and are not added to the 30 curated cases. Counts reflect available annotations, not national harm rates or unethical behaviour. Dates are source incident dates; harm labels are CSETv1 tangible-harm classifications, not OECD incident/hazard definitions.
+
+See GLOBAL-DATA-REVIEW.md and dist/data/global-incidents.json for provenance, transformations and reuse terms. Natural Earth geometry is public domain. This SVG map needs no Google Maps key, location access or third-party map requests.

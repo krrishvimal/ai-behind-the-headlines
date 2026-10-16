@@ -1,6 +1,6 @@
 {
   "name": "ai-behind-the-headlines",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "type": "module",
   "description": "An AI ethics learning guide with 30 curated AI and automation case records and reviewed source conditions.",
