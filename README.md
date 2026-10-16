@@ -1,6 +1,6 @@
 # AI Behind the Headlines
 
-An AI ethics learning website with eight everyday task paths and 30 selected case records. Answer three questions to explore practical next steps and related evidence. This is an educational guide, not a news feed, ethical certification or exhaustive incident database.
+An AI ethics learning website with eight everyday task paths, three fictional decision scenarios and 30 selected case records. Answer three questions to explore practical next steps and related evidence. This is an educational guide, not a news feed, ethical certification or exhaustive incident database.
 
 Research, summaries, learning prompts and code were prepared with AI assistance. Software tests do not establish independent expert verification or comprehensive legal clearance. Source organisations do not endorse this project. Report corrections or rights concerns through [GitHub issues](https://github.com/krrishvimal/ai-behind-the-headlines/issues), without posting sensitive information.
 
@@ -39,3 +39,11 @@ The stories section begins with six matching cards and reveals six more at a tim
 The ready-to-serve files are in dist. The included vercel.json uses the Other framework preset and dist output directory with no installation or build command. GitHub stores the project; hosting is a separate deployment. Local generated archives, hosting identity, .env files, dependencies and ZIPs are excluded by .gitignore.
 
 The standalone copy is generated/AI Behind the Headlines.html. Publish only the reviewed deployment files. Do not upload generated/held-case-records.json or unrelated workspace files. Source licences do not grant rights to publisher assets or third-party exhibits.
+
+## Fictional decision scenarios and source context
+
+The 16 October evening update adds three fictional situations: assessed work, an urgent payment request and an AI-edited portrait. Each has two contexts and three actions, giving 18 distinct reflections. They explain possible concerns and practical next steps; they do not predict outcomes, score morality, determine legal compliance or allege new real incidents. Related real records are explicitly distinguished from the fiction. Answers stay in browser memory and clear on reload.
+
+Every checklist suggestion now shows its source type, geography, practical limit and context review date next to its source link. Country-specific source notes appear below the checklist with the bibliography, not as universal rules at the top. The general local-rule reminder and optional India reading remain separate. Downloads retain the source labels and context. OECD principles are labelled ethical references, not law. The review date is not the original source's publication date.
+
+The proposed broad global dataset/map is deferred in favour of the user's later choice of scenarios. No external incident dataset was imported. The 30 reviewed case records remain unchanged.
