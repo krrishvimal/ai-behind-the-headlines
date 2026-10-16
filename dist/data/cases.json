@@ -1,0 +1,1435 @@
+{
+  "version": "3.1.0",
+  "reviewedOn": "2026-10-16",
+  "scope": "An editorial selection of 30 AI and related automated-system cases using reviewed source-reuse conditions. Not a census, representative sample, live feed or list of proven unethical acts.",
+  "dateBasis": "recordDate is the publication date of the earliest source included here, not necessarily when the incident happened or was first reported anywhere. eventPeriod describes the underlying events separately.",
+  "cases": [
+    {
+      "id": "uber-tempe",
+      "title": "A fatal test-vehicle crash exposed gaps in oversight",
+      "entity": "Uber ATG",
+      "category": "Physical safety",
+      "sector": "Transport",
+      "jurisdiction": "United States",
+      "technology": "Automated driving",
+      "recordDate": "2019-11-19",
+      "eventPeriod": "18 March 2018",
+      "status": "Official finding",
+      "outcomeAsOf": "2019-11-19",
+      "summary": "An Uber developmental automated vehicle struck and killed a pedestrian in Tempe, Arizona. The NTSB identified the distracted safety operator as the probable cause and organisational safety shortcomings as contributing factors.",
+      "aiRole": "A developmental automated driving system controlled the vehicle. The finding covers human oversight and safety management as well as automation.",
+      "affected": "The pedestrian killed in the crash and people exposed to testing on public roads.",
+      "outcome": "The NTSB issued a safety investigation report and recommendations. This record describes the safety finding, not a criminal verdict.",
+      "limitation": "A fatal crash cannot be attributed to AI alone. The official finding names multiple contributing factors.",
+      "lesson": "A human backup only helps when the whole system supports effective supervision.",
+      "sources": [
+        {
+          "label": "NTSB investigation and report HAR-19/03",
+          "publisher": "NTSB",
+          "date": "2019-11-19",
+          "url": "https://www.ntsb.gov/investigations/Pages/hwy18mh010.aspx",
+          "type": "Safety investigation"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "What Happened; What We Found",
+          "outcome": "What We Recommended"
+        },
+        "numberAndScopeChecks": "Fatality and 18 March 2018 supported; probable cause is not AI alone.",
+        "correction": "Aligned causal wording with NTSB finding and removed a name not established by the linked page.",
+        "remainingUncertainty": "A fatal crash cannot be attributed to AI alone. The official finding names multiple contributing factors.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "clearview-canada",
+      "title": "Public photos became a facial search database",
+      "entity": "Clearview AI",
+      "category": "Privacy & data",
+      "sector": "Identity & surveillance",
+      "jurisdiction": "Canada",
+      "technology": "Facial recognition",
+      "recordDate": "2021-02-03",
+      "eventPeriod": "Collection and Canadian services investigated in 2020–2021",
+      "status": "Official finding",
+      "outcomeAsOf": "2021-12-14",
+      "summary": "Canadian privacy commissioners found that Clearview collected sensitive biometric information without consent and violated federal and provincial privacy laws. The service matched faces against images scraped from the internet.",
+      "aiRole": "Facial recognition made scraped images searchable by a person's face.",
+      "affected": "Canadians whose images were collected, including children.",
+      "outcome": "After the joint findings, three provincial authorities issued orders in December 2021 to stop specified services and non-consensual collection, use and disclosure, and to delete relevant images and biometric data.",
+      "limitation": "This describes the Canadian findings and December 2021 orders, not the current status of every later appeal or proceeding. Clearview disputed the original findings.",
+      "lesson": "A photo being publicly visible does not automatically mean consent for biometric reuse.",
+      "sources": [
+        {
+          "label": "Joint privacy investigation announcement",
+          "publisher": "Office of the Privacy Commissioner of Canada",
+          "date": "2021-02-03",
+          "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2021/nr-c_210203/",
+          "type": "Regulator finding"
+        },
+        {
+          "publisher": "Office of the Privacy Commissioner of Canada",
+          "date": "2021-12-14",
+          "url": "https://www.priv.gc.ca/en/opc-news/news-and-announcements/2021/an_211214/",
+          "label": "Provincial compliance orders announced",
+          "type": "Regulator follow-up"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "February findings, collection and consent paragraphs",
+          "outcome": "December announcement, provincial orders bullets"
+        },
+        "numberAndScopeChecks": "Updated recommendation-only outcome; provincial orders distinguished from federal powers.",
+        "correction": "Added December 2021 provincial orders.",
+        "remainingUncertainty": "This describes the Canadian findings and December 2021 orders, not the current status of every later appeal or proceeding. Clearview disputed the original findings.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "everalbum",
+      "title": "Photo storage came with disputed facial recognition practices",
+      "entity": "Everalbum",
+      "category": "Privacy & data",
+      "sector": "Consumer apps",
+      "jurisdiction": "United States",
+      "technology": "Facial recognition",
+      "recordDate": "2021-01-11",
+      "eventPeriod": "Practices described in the FTC's 2021 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2021-05-07",
+      "summary": "Everalbum settled FTC allegations about misleading users over facial recognition and retaining photos and videos after account deactivation.",
+      "aiRole": "The photo service used facial recognition. The enforcement concerned consent and data handling around that technology.",
+      "affected": "People who uploaded photos and videos to the Ever app.",
+      "outcome": "The FTC finalised its settlement in May 2021. The case page also lists a later compliance report.",
+      "limitation": "A consent settlement is not the same as a trial finding or an admission of every allegation.",
+      "lesson": "Privacy controls need to match what the product actually does with people's data.",
+      "sources": [
+        {
+          "label": "FTC case record, complaint and final order",
+          "publisher": "FTC",
+          "date": "2021-05-07",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3172-everalbum-inc-matter",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial complaint date in case timeline",
+          "publisher": "FTC",
+          "date": "2021-01-11",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/192-3172-everalbum-inc-matter#case-timeline",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "Case Summary; January 2021 complaint",
+          "outcome": "May 2021 case timeline and final-order entry"
+        },
+        "numberAndScopeChecks": "Settlement retained as settlement; later compliance report is not a new incident.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "A consent settlement is not the same as a trial finding or an admission of every allegation.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "seven-eleven",
+      "title": "Facial recognition quietly switched back on",
+      "entity": "7-Eleven Australia",
+      "category": "Privacy & data",
+      "sector": "Retail",
+      "jurisdiction": "Australia",
+      "technology": "Facial recognition",
+      "recordDate": "2024-09-27",
+      "eventPeriod": "Approximately 12 months before discovery in March 2023",
+      "status": "Investigation closed",
+      "outcomeAsOf": "2024-09-27",
+      "summary": "Following an earlier privacy determination, a service provider inadvertently re-enabled facial recognition on survey devices in 54 stores. The OAIC said 45,874 facial images were captured.",
+      "aiRole": "Facial recognition functionality in customer feedback devices was reactivated by device settings.",
+      "affected": "Customers whose facial images were captured in the affected stores.",
+      "outcome": "The OAIC closed its investigation after remediation, deletion confirmation and safeguards against reactivation. It found the reactivation was inadvertent and noted 7-Eleven voluntarily reported it.",
+      "limitation": "This record concerns the reactivation incident, not a second count of the original 2021 case. Images captured is not a count of unique people.",
+      "lesson": "Privacy protections need to survive updates and device replacements.",
+      "sources": [
+        {
+          "label": "OAIC investigation closure and background",
+          "publisher": "OAIC",
+          "date": "2024-09-27",
+          "url": "https://www.oaic.gov.au/news/media-centre/oaic-closes-investigation-into-7-eleven-stores-pty-ltd-following-uplift-of-privacy-practices",
+          "type": "Regulator finding",
+          "reuseNote": "Source: Office of the Australian Information Commissioner website – www.oaic.gov.au. © Commonwealth of Australia. Website text generally CC BY 4.0, subject to exceptions. This case is an independent factual summary, not the original release.",
+          "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "Background, reactivation and image count",
+          "outcome": "Privacy uplift; investigation closure"
+        },
+        "numberAndScopeChecks": "54 stores / 45,874 images; images are not unique individuals.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This record concerns the reactivation incident, not a second count of the original 2021 case. Images captured is not a count of unique people.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "alexa",
+      "title": "Children's voice recordings were kept despite deletion requests",
+      "entity": "Amazon Alexa",
+      "category": "Privacy & data",
+      "sector": "Consumer devices",
+      "jurisdiction": "United States",
+      "technology": "Voice assistant",
+      "recordDate": "2023-05-31",
+      "eventPeriod": "Data practices described in the May 2023 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2023-07-19",
+      "summary": "The FTC and DOJ alleged that Amazon retained children's Alexa recordings and undermined parents' deletion requests. The FTC linked the retained recordings to training voice-related algorithms.",
+      "aiRole": "Children's speech data helped train Alexa's speech processing.",
+      "affected": "Children using Alexa and parents attempting to control their data.",
+      "outcome": "The DOJ announced a permanent injunction and a $25 million civil penalty as part of a settlement over alleged privacy violations. The court entered the stipulated order in July 2023.",
+      "limitation": "This record describes the July 2023 settlement. The penalty is not a measure of the monetary harm caused by AI.",
+      "lesson": "A delete button needs to work across the data systems behind a product.",
+      "sources": [
+        {
+          "label": "FTC and DOJ complaint and proposed settlement announcement",
+          "publisher": "FTC",
+          "date": "2023-05-31",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-doj-charge-amazon-violating-childrens-privacy-law-keeping-kids-alexa-voice-recordings-forever",
+          "type": "Enforcement announcement"
+        },
+        {
+          "label": "DOJ settlement and injunction announcement",
+          "publisher": "US Department of Justice",
+          "date": "2023-07-19",
+          "url": "https://www.justice.gov/archives/opa/pr/amazon-agrees-injunctive-relief-and-25-million-civil-penalty-alleged-violations-childrens",
+          "type": "Enforcement follow-up"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC complaint account, retention and training paragraphs",
+          "outcome": "DOJ July 2023 announcement, order entered today"
+        },
+        "numberAndScopeChecks": "USD 25 million is a civil penalty; July court entry replaces proposed-only wording.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This record describes the July 2023 settlement. The penalty is not a measure of the monetary harm caused by AI.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "ring",
+      "title": "Home videos were used without adequate consent and safeguards",
+      "entity": "Ring",
+      "category": "Privacy & data",
+      "sector": "Consumer devices",
+      "jurisdiction": "United States",
+      "technology": "Algorithm training",
+      "recordDate": "2023-05-31",
+      "eventPeriod": "Practices described in the May 2023 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2024-04-23",
+      "summary": "The FTC alleged that Ring allowed excessive access to private videos, used videos to train algorithms without consent, and failed to adequately protect customers from account compromise.",
+      "aiRole": "Algorithm training was one part of a broader privacy and security case. Employee surveillance and hacking were not themselves AI-generated acts.",
+      "affected": "People whose private home videos and camera accounts were exposed.",
+      "outcome": "The 2023 settlement required payment, deletion of videos and privacy and security safeguards. In April 2024, the FTC announced more than $5.6 million in refunds being sent to consumers.",
+      "limitation": "The entire case and settlement amount cannot be attributed solely to AI training.",
+      "lesson": "Training data access needs clear permission and strict internal controls.",
+      "sources": [
+        {
+          "label": "FTC complaint and proposed settlement announcement",
+          "publisher": "FTC",
+          "date": "2023-05-31",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2023/05/ftc-says-ring-employees-illegally-surveilled-customers-failed-stop-hackers-taking-control-users",
+          "type": "Enforcement announcement"
+        },
+        {
+          "label": "FTC refund announcement following the settlement",
+          "publisher": "FTC",
+          "date": "2024-04-23",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/04/ftc-sends-refunds-ring-customers-stemming-2023-settlement-over-charges-company-failed-block",
+          "type": "Enforcement follow-up"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC complaint account, access and training paragraphs",
+          "outcome": "April 2024 refund announcement, opening paragraphs"
+        },
+        "numberAndScopeChecks": "USD 5.6 million is refunds announced, not measured AI-caused loss; wider case retained.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The entire case and settlement amount cannot be attributed solely to AI training.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "rite-aid",
+      "title": "Facial recognition alerts put shoppers under suspicion",
+      "entity": "Rite Aid",
+      "category": "Discrimination",
+      "sector": "Retail",
+      "jurisdiction": "United States",
+      "technology": "Facial recognition",
+      "recordDate": "2023-12-19",
+      "eventPeriod": "2012–2020 deployment described by the FTC",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2024-03-08",
+      "summary": "The FTC alleged that Rite Aid used facial recognition without reasonable safeguards, leading to false matches and harm to shoppers. Its case concerned how the retailer deployed and acted on the technology.",
+      "aiRole": "Facial recognition generated security alerts that employees acted on.",
+      "affected": "Shoppers wrongly flagged by the system; the FTC described disproportionate risks for some demographic groups.",
+      "outcome": "The FTC case record describes a five-year prohibition on facial recognition for security or surveillance and additional safeguards.",
+      "limitation": "The allegations and settlement concern this deployment, not the accuracy of every facial recognition system.",
+      "lesson": "An automated match needs verification before someone suffers a real consequence.",
+      "sources": [
+        {
+          "label": "FTC case record and orders",
+          "publisher": "FTC",
+          "date": "2024-03-08",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2023190-rite-aid-corporation-ftc-v",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial enforcement announcement",
+          "publisher": "FTC",
+          "date": "2023-12-19",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2023/12/rite-aid-banned-using-ai-facial-recognition-after-ftc-says-retailer-deployed-technology-without",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC case summary and original deployment announcement",
+          "outcome": "Case summary, five-year prohibition; orders in timeline"
+        },
+        "numberAndScopeChecks": "Five years is the prohibition duration; allegations remain attributed.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The allegations and settlement concern this deployment, not the accuracy of every facial recognition system.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "mata",
+      "title": "Invented legal cases reached a real courtroom",
+      "entity": "Mata v. Avianca lawyers",
+      "category": "Output & content harms",
+      "sector": "Legal services",
+      "jurisdiction": "United States",
+      "technology": "Generative AI",
+      "recordDate": "2023-06-22",
+      "eventPeriod": "Court submissions and sanctions in 2023",
+      "status": "Court decision",
+      "outcomeAsOf": "2023-06-30",
+      "summary": "Lawyers submitted non-existent opinions and quotations generated by ChatGPT. The court criticised their failure to verify the material and their continued reliance on it after questions were raised.",
+      "aiRole": "Generated legal text was used as if it were verified case law.",
+      "affected": "The court, litigants and the integrity of legal proceedings.",
+      "outcome": "The June 2023 sanctions order imposed a $5,000 penalty jointly and severally on the respondents. A subsequent administrative order records its transfer.",
+      "limitation": "Avianca was the opposing litigant, not the party generating the citations. The $5,000 penalty was joint, not a separate fine for each lawyer.",
+      "lesson": "A convincing citation still needs to be opened and checked.",
+      "sources": [
+        {
+          "publisher": "US District Court, SDNY; reproduced by Justia",
+          "date": "2023-06-22",
+          "url": "https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2022cv01461/575368/54",
+          "label": "Opinion and Order on Sanctions, document 54, 22 June 2023",
+          "type": "Court sanctions order",
+          "reuseNote": "Government-authored court order. Justia disclaims copyright in US government court documents; its own annotations and website design are not reproduced."
+        },
+        {
+          "publisher": "US District Court, SDNY; reproduced by Justia",
+          "date": "2023-06-30",
+          "url": "https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1%3A2022cv01461/575368/56",
+          "label": "Administrative order transferring the paid penalty, document 56, 30 June 2023",
+          "type": "Court administrative order",
+          "reuseNote": "Government-authored court order; no Justia annotations or website design reproduced."
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "Sanctions order, opening and findings of fact paragraphs 7–12",
+          "outcome": "Sanctions order, printed pages 33–34; conclusion (d)"
+        },
+        "numberAndScopeChecks": "USD 5,000 jointly and severally, not per respondent. PDF successfully retrieved this pass.",
+        "correction": "Clarified joint and several penalty; directly checked PDF conclusion.",
+        "remainingUncertainty": "Avianca was the opposing litigant, not the party generating the citations. The $5,000 penalty was joint, not a separate fine for each lawyer.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "hong-kong-deepfake",
+      "title": "A fake video meeting triggered a large money transfer",
+      "entity": "Unnamed company in Hong Kong",
+      "category": "Fraud & impersonation",
+      "sector": "Finance & business",
+      "jurisdiction": "Hong Kong",
+      "technology": "Deepfake audio / video",
+      "recordDate": "2024-06-26",
+      "eventPeriod": "Reported to police in late January 2024",
+      "status": "Reported investigation",
+      "outcomeAsOf": "2024-06-26",
+      "summary": "Hong Kong authorities described a fraud involving a pre-recorded deepfake meeting impersonating a company's chief financial officer. The employee authorised transfers with a reported loss of about HK$200 million.",
+      "aiRole": "Police believed publicly available video and voice recordings were used to fabricate the meeting.",
+      "affected": "The company and the employee deceived by the impersonation.",
+      "outcome": "The government said the case remained under police investigation at the June 2024 reply.",
+      "limitation": "The official account describes a pre-recorded meeting with no interaction, not a proven real-time interactive deepfake. The reported loss is in Hong Kong dollars.",
+      "lesson": "Verify unusual payment instructions through a separate trusted channel.",
+      "sources": [
+        {
+          "label": "Legislative Council written reply on deepfake fraud",
+          "publisher": "Hong Kong Government, Secretary for Security",
+          "date": "2024-06-26",
+          "url": "https://www.info.gov.hk/gia/general/202406/26/P2024062600192.htm",
+          "type": "Official government account",
+          "reuseNote": "Source: Information Services Department / HKSAR Government. Government copyright acknowledged. Independent factual summary and reconstruction; original media not reproduced."
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "Government reply, part (1), January case paragraphs",
+          "outcome": "Same paragraph, investigation status in June 2024"
+        },
+        "numberAndScopeChecks": "About HKD 200 million reported loss; pre-recorded, no interaction; not a proven live deepfake.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The official account describes a pre-recorded meeting with no interaction, not a proven real-time interactive deepfake. The reported loss is in Hong Kong dollars.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "music-streaming",
+      "title": "AI songs and bot listeners diverted real royalties",
+      "entity": "Michael Smith",
+      "category": "Fraud & impersonation",
+      "sector": "Creative industries",
+      "jurisdiction": "United States",
+      "technology": "Generative AI",
+      "recordDate": "2024-09-04",
+      "eventPeriod": "Streaming scheme, 2017–2024; AI-generated music used from around 2018",
+      "status": "Guilty plea / sentencing",
+      "outcomeAsOf": "2026-10-06",
+      "summary": "Michael Smith used AI-generated songs and automated listener accounts to obtain fraudulent streaming royalties. The DOJ reported more than $8 million in proceeds.",
+      "aiRole": "Generating a large catalogue helped spread fake streams across many songs. Bots supplied the fraudulent listening activity.",
+      "affected": "Streaming services and musicians whose royalty pool was diverted.",
+      "outcome": "After a March 2026 guilty plea, Smith was sentenced in October 2026 to 18 months in prison, two years of supervised release and $8,091,843.64 in forfeiture.",
+      "limitation": "The offence concerns fraudulent streaming, not simply making music with AI. Forfeiture is not the same as a fine.",
+      "lesson": "Automation can scale fraud when a payment system rewards easily fabricated activity.",
+      "sources": [
+        {
+          "label": "DOJ sentencing announcement",
+          "publisher": "US Department of Justice",
+          "date": "2026-10-06",
+          "url": "https://www.justice.gov/usao-sdny/pr/north-carolina-man-sentenced-18-months-prison-super-intelligence-assisted-music",
+          "type": "Prosecutor account of sentencing"
+        },
+        {
+          "label": "Initial indictment announcement",
+          "publisher": "US Department of Justice",
+          "date": "2024-09-04",
+          "url": "https://www.justice.gov/usao-sdny/pr/north-carolina-musician-charged-music-streaming-fraud-aided-artificial-intelligence",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "DOJ sentencing release, scheme description",
+          "outcome": "Sentencing release, opening and final sentencing paragraphs"
+        },
+        "numberAndScopeChecks": "18 months; two years supervised release; USD 8,091,843.64 forfeiture, not fine.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The offence concerns fraudulent streaming, not simply making music with AI. Forfeiture is not the same as a fine.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "donotpay",
+      "title": "An AI lawyer claim needed evidence",
+      "entity": "DoNotPay",
+      "category": "Misleading AI claims",
+      "sector": "Legal services",
+      "jurisdiction": "United States",
+      "technology": "Generative AI",
+      "recordDate": "2024-09-25",
+      "eventPeriod": "Marketing and service claims described in the FTC complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2025-02-11",
+      "summary": "The FTC challenged claims that DoNotPay's chatbot could substitute for a human lawyer. The agency said the company lacked evidence for the advertised professional capabilities.",
+      "aiRole": "AI capabilities were central to the service's marketing claims.",
+      "affected": "Consumers relying on advertised legal assistance.",
+      "outcome": "The FTC finalised an order requiring $193,000, notices to eligible subscribers and limits on unsupported professional-service claims.",
+      "limitation": "This case concerns substantiation of advertised capabilities; it does not show that all legal AI assistance is ineffective.",
+      "lesson": "Claims about professional expertise need evidence, even when the product uses AI.",
+      "sources": [
+        {
+          "label": "FTC case timeline and final order announcement",
+          "publisher": "FTC",
+          "date": "2025-02-11",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/donotpay",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial action listed in FTC case timeline",
+          "publisher": "FTC",
+          "date": "2024-09-25",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/donotpay#case-timeline",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC Case Summary and complaint",
+          "outcome": "January final order / February announcement in timeline"
+        },
+        "numberAndScopeChecks": "USD 193,000 monetary relief; announcement date distinguished from order finalisation.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This case concerns substantiation of advertised capabilities; it does not show that all legal AI assistance is ineffective.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "ngl",
+      "title": "AI moderation claims came under scrutiny in a teen messaging app",
+      "entity": "NGL Labs",
+      "category": "Misleading AI claims",
+      "sector": "Consumer apps",
+      "jurisdiction": "United States",
+      "technology": "AI moderation claims",
+      "recordDate": "2024-07-09",
+      "eventPeriod": "App practices described in the July 2024 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2026-01-06",
+      "summary": "The FTC and Los Angeles District Attorney alleged that NGL falsely promoted effective AI content moderation while marketing anonymous messaging to children and teens. The case also covered fake messages and billing practices.",
+      "aiRole": "AI was advertised as a safeguard against cyberbullying. The source concerns the accuracy of that safety promise.",
+      "affected": "Children, teens and paying app users.",
+      "outcome": "The FTC case record lists stipulated orders in 2024 and a refund claims process announced in January 2026. The settlement included restrictions on offering the app to under-18s and deceptive claims; it addressed multiple practices.",
+      "limitation": "The settlement addressed several practices. Its total cannot be assigned solely to AI moderation.",
+      "lesson": "A claim of AI moderation needs demonstrated protection, especially for children.",
+      "sources": [
+        {
+          "label": "FTC and Los Angeles DA action announcement",
+          "publisher": "FTC",
+          "date": "2024-07-09",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/07/ftc-order-will-ban-ngl-labs-its-founders-offering-anonymous-messaging-apps-kids-under-18-halt",
+          "type": "Enforcement announcement"
+        },
+        {
+          "label": "FTC case timeline, stipulated orders and refund claims update",
+          "publisher": "FTC",
+          "date": "2026-01-06",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/ngl",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC July allegations, moderation section",
+          "outcome": "FTC case timeline, 2024 orders / January 2026 refund update"
+        },
+        "numberAndScopeChecks": "Under-18 restriction is part of a wider settlement, not proof all harm was AI-caused.",
+        "correction": "Qualified headline; retained later refund-process update.",
+        "remainingUncertainty": "The settlement addressed several practices. Its total cannot be assigned solely to AI moderation.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "intellivision",
+      "title": "The FTC challenged bias-free facial recognition claims",
+      "entity": "IntelliVision Technologies",
+      "category": "Misleading AI claims",
+      "sector": "Identity & surveillance",
+      "jurisdiction": "United States",
+      "technology": "Facial recognition",
+      "recordDate": "2024-12-03",
+      "eventPeriod": "Claims described by the FTC as made from late 2018 through early 2024",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2025-01-13",
+      "summary": "The FTC alleged that IntelliVision lacked support for claims about facial recognition accuracy, freedom from gender and racial bias, and resistance to spoofing.",
+      "aiRole": "The case concerns marketing of an AI facial recognition system.",
+      "affected": "Purchasers and people subject to systems relying on those claims.",
+      "outcome": "The FTC announced a final order in January 2025 requiring support for accuracy, effectiveness and bias-related representations.",
+      "limitation": "This is a claims-substantiation case; it is not a count of people proven to have been misidentified.",
+      "lesson": "The label 'bias-free' is a testable claim, not a design slogan.",
+      "sources": [
+        {
+          "label": "FTC complaint and proposed order announcement",
+          "publisher": "FTC",
+          "date": "2024-12-03",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/12/ftc-takes-action-against-intellivision-technologies-deceptive-claims-about-its-facial-recognition",
+          "type": "Enforcement announcement"
+        },
+        {
+          "label": "FTC final order announcement in case timeline",
+          "publisher": "FTC",
+          "date": "2025-01-13",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/intellivision-matter-timeline-item-2025-01-13",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC complaint announcement, unsupported claims paragraphs",
+          "outcome": "January 2025 final-order timeline"
+        },
+        "numberAndScopeChecks": "No universal accuracy or victim count inferred. Headline changed to attributed challenge.",
+        "correction": "Qualified headline as FTC challenge.",
+        "remainingUncertainty": "This is a claims-substantiation case; it is not a count of people proven to have been misidentified.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "workado",
+      "title": "An AI text detector’s accuracy claims were challenged",
+      "entity": "Workado",
+      "category": "Misleading AI claims",
+      "sector": "Content tools",
+      "jurisdiction": "United States",
+      "technology": "AI text detection",
+      "recordDate": "2025-04-28",
+      "eventPeriod": "Advertising described in the FTC's April 2025 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2025-08-28",
+      "summary": "The FTC challenged Workado's AI content detection claims. It alleged the underlying model was trained or fine-tuned to classify academic content despite broader advertising about the tool's capabilities.",
+      "aiRole": "A classifier was marketed as identifying AI-written text across a wider range of material.",
+      "affected": "Consumers relying on the detector's advertised accuracy.",
+      "outcome": "The FTC approved a final order requiring reliable support for detection claims, consumer notices and compliance reporting.",
+      "limitation": "The case does not supply a universal accuracy rate for every AI detector or every kind of writing.",
+      "lesson": "A detector's results depend on what it was tested on.",
+      "sources": [
+        {
+          "label": "FTC final order announcement",
+          "publisher": "FTC",
+          "date": "2025-08-28",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-approves-final-order-against-workado-llc-which-misrepresented-accuracy-its-artificial",
+          "type": "Enforcement announcement"
+        },
+        {
+          "label": "Initial FTC action",
+          "publisher": "FTC",
+          "date": "2025-04-28",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-order-requires-workado-back-artificial-intelligence-detection-claims",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC final announcement, academic-content allegation",
+          "outcome": "Final order requirements bullets"
+        },
+        "numberAndScopeChecks": "No universal detector accuracy inferred. Headline changed to claims challenged.",
+        "correction": "Qualified headline as challenged claims.",
+        "remainingUncertainty": "The case does not supply a universal accuracy rate for every AI detector or every kind of writing.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "accessibe",
+      "title": "An accessibility overlay was sold with sweeping AI claims",
+      "entity": "accessiBe",
+      "category": "Misleading AI claims",
+      "sector": "Web accessibility",
+      "jurisdiction": "United States",
+      "technology": "AI accessibility claims",
+      "recordDate": "2025-01-03",
+      "eventPeriod": "Marketing described in the January 2025 complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2025-04-22",
+      "summary": "The FTC alleged that accessiBe misrepresented its AI-powered tool's ability to make any website compliant with Web Content Accessibility Guidelines.",
+      "aiRole": "AI automation was advertised as a route to website accessibility compliance.",
+      "affected": "Website buyers and people with disabilities who rely on accessible websites.",
+      "outcome": "The FTC approved a final settlement order in April 2025, including $1 million and restrictions on deceptive claims.",
+      "limitation": "This is an enforcement case about specific marketing claims, not a finding that every accessibility automation tool is useless.",
+      "lesson": "Accessibility needs testing with real requirements and users, beyond a product promise.",
+      "sources": [
+        {
+          "label": "FTC case record with initial action and final approval",
+          "publisher": "FTC",
+          "date": "2025-04-22",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2223156-accessibe-inc",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial action date in FTC case timeline",
+          "publisher": "FTC",
+          "date": "2025-01-03",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2223156-accessibe-inc#case-timeline",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC Case Summary, WCAG claims",
+          "outcome": "April 2025 final approval in timeline"
+        },
+        "numberAndScopeChecks": "USD 1 million settlement; current retrieval timed out but earlier full case page reviewed.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This is an enforcement case about specific marketing claims, not a finding that every accessibility automation tool is useless.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "automators",
+      "title": "AI-powered stores were promoted as easy income",
+      "entity": "Automators AI",
+      "category": "Misleading AI claims",
+      "sector": "Finance & business",
+      "jurisdiction": "United States",
+      "technology": "AI business claims",
+      "recordDate": "2023-08-22",
+      "eventPeriod": "Online-store scheme described in the FTC complaint",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2024-02-27",
+      "summary": "The FTC challenged an ecommerce business opportunity scheme that promoted AI and a proven system as ways to generate profitable online stores. It alleged unfounded income claims.",
+      "aiRole": "AI was part of the marketing promise. The record does not independently establish the actual technical capabilities of the software.",
+      "affected": "Consumers investing in online-store opportunities and coaching.",
+      "outcome": "The FTC reported settlements involving surrender of assets and a lifetime business-opportunity ban for the businesses and two owners.",
+      "limitation": "An AI marketing claim is not evidence that AI generated the promised profits or caused all losses.",
+      "lesson": "Ask for evidence of outcomes when AI is used to sell an investment opportunity.",
+      "sources": [
+        {
+          "label": "FTC case record and settlement timeline",
+          "publisher": "FTC",
+          "date": "2024-02-27",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/automators",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial action date in case timeline",
+          "publisher": "FTC",
+          "date": "2023-08-22",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/automators#case-timeline",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC Case Summary, AI and income claims",
+          "outcome": "February 2024 settlement paragraph and order entry"
+        },
+        "numberAndScopeChecks": "Lifetime restriction described for businesses and two owners, not every individual.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "An AI marketing claim is not evidence that AI generated the promised profits or caused all losses.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "ascend",
+      "title": "A passive-income pitch leaned on AI promises",
+      "entity": "Ascend Ecom",
+      "category": "Misleading AI claims",
+      "sector": "Finance & business",
+      "jurisdiction": "United States",
+      "technology": "AI business claims",
+      "recordDate": "2024-09-25",
+      "eventPeriod": "Storefront marketing described in the FTC complaint",
+      "status": "Settlement announced",
+      "outcomeAsOf": "2025-06-23",
+      "summary": "The FTC alleged that Ascend sold costly online-store opportunities using false promises that AI-powered tools would produce substantial passive income.",
+      "aiRole": "AI featured in claims about maximising store success; the source does not verify that the advertised technology worked as claimed.",
+      "affected": "Consumers buying the online-store business opportunities.",
+      "outcome": "A June 2025 announcement described a proposed court order banning business-opportunity sales and requiring asset turnover.",
+      "limitation": "Outcome is stated as proposed in the cited announcement. Complaint allegations are not trial findings.",
+      "lesson": "A technology label does not validate a financial return promise.",
+      "sources": [
+        {
+          "label": "FTC complaint and proposed settlement timeline",
+          "publisher": "FTC",
+          "date": "2025-06-23",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/242-3023-ascend-ecom",
+          "type": "Enforcement case record"
+        },
+        {
+          "label": "Initial action in case timeline",
+          "publisher": "FTC",
+          "date": "2024-09-25",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/242-3023-ascend-ecom#case-timeline",
+          "type": "Enforcement case record"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC Case Summary, allegations",
+          "outcome": "June 2025 proposed-order entry"
+        },
+        "numberAndScopeChecks": "Proposed outcome only; current final court status unresolved in reviewed source.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "Outcome is stated as proposed in the cited announcement. Complaint allegations are not trial findings.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "rytr",
+      "title": "An AI reviews case changed after the original order",
+      "entity": "Rytr",
+      "category": "Misleading AI claims",
+      "sector": "Content tools",
+      "jurisdiction": "United States",
+      "technology": "Generative AI",
+      "recordDate": "2025-12-22",
+      "eventPeriod": "2024 consent order, set aside in December 2025",
+      "status": "Order set aside",
+      "outcomeAsOf": "2025-12-22",
+      "summary": "A 2024 FTC consent order concerned allegations that Rytr enabled deceptive reviews. In December 2025, the FTC reopened the matter and set that order aside.",
+      "aiRole": "The service generated review and testimonial text. Whether potential misuse justified the earlier action was central to the later reversal.",
+      "affected": "The earlier case concerned consumers reading reviews; this entry does not establish actual victim numbers.",
+      "outcome": "The FTC said the alleged facts did not support a Section 5 violation and that the order unduly burdened innovation. The old ban must not be presented as still in force.",
+      "limitation": "Included to show a changed enforcement outcome, not as a confirmed violation or proven harmful incident. The category describes the subject of the original allegations.",
+      "lesson": "Check later outcomes before repeating an old enforcement headline.",
+      "sources": [
+        {
+          "label": "FTC announcement setting aside the order",
+          "publisher": "FTC",
+          "date": "2025-12-22",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-reopens-sets-aside-rytr-final-order-response-trump-administrations-ai-action-plan",
+          "type": "Enforcement reversal"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "December 2025 release, description of earlier case",
+          "outcome": "Reopened / set-aside paragraphs"
+        },
+        "numberAndScopeChecks": "Original ban is not represented as in force; not counted as proven violation.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "Included to show a changed enforcement outcome, not as a confirmed violation or proven harmful incident. The category describes the subject of the original allegations.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "ofqual-grading",
+      "title": "Calculated exam grades were replaced after public distress",
+      "entity": "Ofqual 2020 grading",
+      "category": "Governance & oversight",
+      "sector": "Education",
+      "jurisdiction": "United Kingdom",
+      "technology": "Statistical decision system",
+      "eventPeriod": "England, summer 2020",
+      "status": "Policy reversed",
+      "summary": "Ofqual acknowledged anguish and damaged confidence from calculated exam grades after exams were cancelled.",
+      "aiRole": "Statistical standardisation supported grade awards. This was an automated assessment controversy, not a demonstrated generative AI system.",
+      "affected": "Students, schools and teachers in England.",
+      "outcome": "On 17 August 2020, Ofqual announced that students would receive their school’s assessment or their moderated grade, whichever was higher.",
+      "limitation": "This entry concerns England. It does not treat every UK grading policy as identical or prove individual discrimination.",
+      "lesson": "An aggregate model can produce decisions that need individual review.",
+      "sources": [
+        {
+          "publisher": "Ofqual / GOV.UK",
+          "date": "2020-08-17",
+          "url": "https://www.gov.uk/government/news/statement-from-roger-taylor-chair-ofqual",
+          "label": "Chair’s statement on changing the grading policy",
+          "type": "Official account",
+          "reuseNote": "Contains public sector information licensed under the Open Government Licence v3.0, except where otherwise stated. © Crown copyright. This case is an independent factual summary.",
+          "reuseLicenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        }
+      ],
+      "recordDate": "2020-08-17",
+      "outcomeAsOf": "2020-08-17",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "Ofqual statement, goals and anguish paragraphs",
+          "outcome": "Centre assessment or moderated grade, whichever higher"
+        },
+        "numberAndScopeChecks": "England only; statistical standardisation, not an LLM.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This entry concerns England. It does not treat every UK grading policy as identical or prove individual discrimination.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "delphia",
+      "title": "An investment adviser claimed AI capabilities it did not have",
+      "entity": "Delphia",
+      "category": "Misleading AI claims",
+      "sector": "Finance & business",
+      "jurisdiction": "United States",
+      "technology": "AI investment claims",
+      "eventPeriod": "2019–2023 statements described in SEC order",
+      "status": "Settlement / final order",
+      "summary": "The SEC found misleading claims about Delphia’s AI and machine-learning investment capabilities.",
+      "aiRole": "The case concerned claimed capabilities, not verified operation of the advertised AI.",
+      "affected": "Clients and prospective clients.",
+      "outcome": "Delphia settled without admitting or denying the findings and agreed to a $225,000 civil penalty.",
+      "limitation": "The penalty is not a quantified investment loss. The release covers a separate Global Predictions proceeding too.",
+      "lesson": "Claims about AI investing need evidence.",
+      "sources": [
+        {
+          "publisher": "SEC",
+          "date": "2024-03-18",
+          "url": "https://www.sec.gov/newsroom/press-releases/2024-36",
+          "label": "SEC release, Delphia paragraphs and settlement terms",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "recordDate": "2024-03-18",
+      "outcomeAsOf": "2024-03-18",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "SEC release, Delphia paragraphs",
+          "outcome": "Shared settlement paragraph, Delphia terms"
+        },
+        "numberAndScopeChecks": "USD 225,000 civil penalty; no admission; separate from Global Predictions.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The penalty is not a quantified investment loss. The release covers a separate Global Predictions proceeding too.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "global-predictions",
+      "title": "An AI financial-adviser description drew SEC action",
+      "entity": "Global Predictions",
+      "category": "Misleading AI claims",
+      "sector": "Finance & business",
+      "jurisdiction": "United States",
+      "technology": "AI investment claims",
+      "eventPeriod": "2023 statements described in SEC order",
+      "status": "Settlement / final order",
+      "summary": "The SEC found misleading statements about Global Predictions’ purported AI use and financial forecasts.",
+      "aiRole": "AI featured in marketing representations; working AI capabilities are not established by those claims.",
+      "affected": "Clients and prospective clients.",
+      "outcome": "The firm settled without admitting or denying findings and agreed to a $175,000 civil penalty.",
+      "limitation": "This is distinct from Delphia’s proceeding, despite a shared announcement. The penalty also addressed other violations.",
+      "lesson": "Check the substance behind financial technology labels.",
+      "sources": [
+        {
+          "publisher": "SEC",
+          "date": "2024-03-18",
+          "url": "https://www.sec.gov/newsroom/press-releases/2024-36",
+          "label": "SEC release, Global Predictions paragraphs and settlement terms",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "recordDate": "2024-03-18",
+      "outcomeAsOf": "2024-03-18",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "SEC release, Global Predictions paragraph",
+          "outcome": "Shared settlement paragraph, Global Predictions terms"
+        },
+        "numberAndScopeChecks": "USD 175,000 civil penalty; no admission; separate proceeding.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "This is distinct from Delphia’s proceeding, despite a shared announcement. The penalty also addressed other violations.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "rimar-capital",
+      "title": "An AI trading pitch was part of misleading investment claims",
+      "entity": "Rimar Capital entities",
+      "category": "Misleading AI claims",
+      "sector": "Finance & business",
+      "jurisdiction": "United States",
+      "technology": "AI investment claims",
+      "eventPeriod": "Conduct described in October 2024 SEC order",
+      "status": "Settlement / final order",
+      "summary": "The SEC found misleading claims about Rimar’s purported AI trading platform alongside other investment representations.",
+      "aiRole": "AI capability was advertised; the enforcement concerned misrepresentation of that capability.",
+      "affected": "Investors and advisory clients.",
+      "outcome": "The parties settled without admitting or denying findings. The SEC announced $310,000 in total civil penalties and additional relief.",
+      "limitation": "Total penalties covered multiple respondents and practices, not a measured AI-caused loss.",
+      "lesson": "Treat an AI label like any other claim requiring proof.",
+      "sources": [
+        {
+          "publisher": "SEC",
+          "date": "2024-10-10",
+          "url": "https://www.sec.gov/newsroom/press-releases/2024-167",
+          "label": "SEC announcement and settlement terms",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "recordDate": "2024-10-10",
+      "outcomeAsOf": "2024-10-10",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "SEC release, order findings paragraphs",
+          "outcome": "Without admitting or denying paragraph"
+        },
+        "numberAndScopeChecks": "USD 310,000 total civil penalties; wider conduct and multiple respondents.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "Total penalties covered multiple respondents and practices, not a measured AI-caused loss.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "evolv-screening",
+      "title": "AI weapons-screening claims were challenged",
+      "entity": "Evolv Technologies",
+      "category": "Misleading AI claims",
+      "sector": "Security screening",
+      "jurisdiction": "United States",
+      "technology": "AI screening claims",
+      "eventPeriod": "Claims described in November 2024 complaint",
+      "status": "Settlement announced",
+      "summary": "The FTC alleged unsupported claims about detecting weapons and ignoring harmless items with AI screening systems, including in schools.",
+      "aiRole": "AI was promoted as improving screening performance. The case concerned claims and deployment, not every weapons detector.",
+      "affected": "School customers and people relying on the advertised screening.",
+      "outcome": "The FTC announced a proposed settlement restricting unsupported claims and offering certain school customers contract cancellation.",
+      "limitation": "The cited announcement describes a proposed order, not a proven universal detection failure or a completed court outcome.",
+      "lesson": "Safety claims require realistic testing and clear limits.",
+      "sources": [
+        {
+          "publisher": "FTC",
+          "date": "2024-11-26",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2024/11/ftc-takes-action-against-evolv-technologies-deceiving-users-about-its-ai-powered-security-screening",
+          "label": "FTC allegations and proposed settlement",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "recordDate": "2024-11-26",
+      "outcomeAsOf": "2024-11-26",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "FTC complaint announcement, screening claims",
+          "outcome": "Proposed Settlement Requirements"
+        },
+        "numberAndScopeChecks": "Proposed settlement retained; court approval not inferred from filing.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The cited announcement describes a proposed order, not a proven universal detection failure or a completed court outcome.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "cruise-reporting",
+      "title": "A pedestrian crash was not fully reported to the regulator",
+      "entity": "Cruise",
+      "category": "Physical safety",
+      "sector": "Transport",
+      "jurisdiction": "United States",
+      "technology": "Automated driving",
+      "eventPeriod": "October 2023 crash; September 2024 enforcement",
+      "status": "Settlement / final order",
+      "summary": "NHTSA said Cruise failed to fully report a pedestrian crash involving its automated driving system.",
+      "aiRole": "An automated vehicle was involved; the enforcement action concerned reporting obligations after the crash.",
+      "affected": "The pedestrian and road users relying on effective safety oversight.",
+      "outcome": "A September 2024 consent order required a $1.5 million penalty and a corrective action plan for crash reporting.",
+      "limitation": "The penalty was for reporting failures. It is not a compensation amount or a standalone finding that AI caused every part of the crash.",
+      "lesson": "Safety oversight depends on complete incident reporting.",
+      "sources": [
+        {
+          "publisher": "NHTSA",
+          "date": "2024-09-30",
+          "url": "https://www.nhtsa.gov/press-releases/consent-order-cruise-crash-reporting",
+          "label": "Consent-order announcement and reporting requirements",
+          "type": "Enforcement announcement"
+        }
+      ],
+      "recordDate": "2024-09-30",
+      "outcomeAsOf": "2024-09-30",
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Official source account",
+        "supportLocators": {
+          "summaryAndAiRole": "NHTSA consent-order announcement, incomplete reporting",
+          "outcome": "Penalty and corrective-action requirements"
+        },
+        "numberAndScopeChecks": "USD 1.5 million for reporting failure, not compensation or sole crash causation.",
+        "correction": "Retained with explicit attribution and scope limits.",
+        "remainingUncertainty": "The penalty was for reporting failures. It is not a compensation amount or a standalone finding that AI caused every part of the crash.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "grok-eu-images",
+      "title": "An image tool faced an investigation into sexualised content risks",
+      "entity": "X / Grok",
+      "category": "Output & content harms",
+      "sector": "Social media",
+      "jurisdiction": "European Union",
+      "technology": "Generative image tools",
+      "recordDate": "2026-01-26",
+      "eventPeriod": "Grok deployment on X; investigation announced January 2026",
+      "status": "Reported investigation",
+      "outcomeAsOf": "2026-01-26",
+      "summary": "The European Commission opened a DSA investigation into X’s handling of risks from Grok, including manipulated sexual images and possible child sexual abuse material.",
+      "aiRole": "The investigation concerns image-generation features and how their deployment could spread illegal content.",
+      "affected": "People depicted in manipulated images and users exposed to harmful material. This record gives no victim count.",
+      "outcome": "The Commission announced an investigation into risk assessment and mitigation. This source records an opening, not a final decision or penalty.",
+      "limitation": "The source does not establish every alleged image, a finding against every user, or the present status of all related proceedings. UK investigations and civil lawsuits are not counted as separate cases here. No abusive images are displayed.",
+      "lesson": "Before releasing an image tool, test misuse risks and provide effective reporting and removal routes.",
+      "sources": [
+        {
+          "publisher": "European Commission / European Union",
+          "date": "2026-01-26",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-investigates-grok-and-xs-recommender-systems-under-digital-services-act",
+          "label": "Commission investigates Grok and X’s recommender systems under the Digital Services Act",
+          "type": "Official investigation announcement",
+          "reuseNote": "© European Union, 1995–2026. Source title and URL above. CC BY 4.0, subject to exceptions. Changed: condensed into this project’s factual summary and editorial lesson; no source image reproduced.",
+          "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "European Commission investigation announcement",
+        "supportLocators": {
+          "summaryAndAiRole": "Opening and Grok risk paragraphs",
+          "outcome": "Risk assessment and mitigation obligations bullets"
+        },
+        "numberAndScopeChecks": "Opening of investigation, not a finding or fine. No victim estimate. Record date is announcement date.",
+        "correction": "Added with an explicit historical investigation status.",
+        "remainingUncertainty": "The source does not establish every alleged image, a finding against every user, or the present status of all related proceedings. UK investigations and civil lawsuits are not counted as separate cases here. No abusive images are displayed.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "getty-stability-uk",
+      "title": "An AI image lawsuit ended with a narrow, mixed ruling",
+      "entity": "Getty Images / Stability AI",
+      "category": "Creative credit & authorship",
+      "sector": "Art and image licensing",
+      "jurisdiction": "United Kingdom",
+      "technology": "Stable Diffusion image generation",
+      "recordDate": "2025-11-04",
+      "eventPeriod": "UK proceedings; judgment delivered 4 November 2025",
+      "status": "Court decision",
+      "outcomeAsOf": "2025-11-04",
+      "summary": "The UK High Court partly upheld Getty’s trademark claim against Stability AI, while rejecting its secondary copyright infringement claim.",
+      "aiRole": "The dispute concerned Stable Diffusion and generated watermarks, alongside copyright allegations about the models.",
+      "affected": "The parties and creative contributors whose rights were at issue. No damages amount or victim total is inferred.",
+      "outcome": "The judge described the successful trademark findings as historical and very limited. Training and output copyright claims had been abandoned; secondary infringement failed.",
+      "limitation": "This is the UK judgment, not a decision on every US claim or on AI training worldwide. The dropped training claim was not a ruling that all training was lawful or unlawful. This record does not establish the current appeal position.",
+      "lesson": "Read the actual outcome. Training rights, generated outputs and trademarks can raise different questions.",
+      "sources": [
+        {
+          "publisher": "High Court of Justice / Courts and Tribunals Judiciary",
+          "date": "2025-11-04",
+          "url": "https://www.judiciary.uk/wp-content/uploads/2025/11/Getty-Images-v-Stability-AI.pdf",
+          "label": "Getty Images v Stability AI [2025] EWHC 2863 (Ch), approved judgment",
+          "type": "Court judgment",
+          "reuseNote": "© Crown copyright. Source title and link above. Licensed under the Open Government Licence v3.0 unless otherwise indicated. Changed: condensed factual account and separate editorial lesson. No artwork or trademark image reproduced.",
+          "reuseLicenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "Approved High Court judgment",
+        "supportLocators": {
+          "summaryAndAiRole": "Paragraphs 8–13; conclusion, paragraphs 757–758",
+          "outcome": "Paragraph 610; conclusion, paragraphs 757–758"
+        },
+        "numberAndScopeChecks": "No 12-million proven-infringement count or damages total. UK proceeding only; abandoned claims distinguished from decided claims.",
+        "correction": "Added the 2025 mixed ruling instead of presenting the original allegations as proven.",
+        "remainingUncertainty": "This is the UK judgment, not a decision on every US claim or on AI training worldwide. The dropped training claim was not a ruling that all training was lawful or unlawful. This record does not establish the current appeal position.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "cambridge-analytica",
+      "title": "Voter profiling began with deceptive data collection",
+      "entity": "Cambridge Analytica",
+      "category": "Privacy & data",
+      "sector": "Political data analytics",
+      "jurisdiction": "United States",
+      "technology": "Data analytics and voter profiling; specific AI method not established",
+      "recordDate": "2019-07-24",
+      "eventPeriod": "Facebook data collection and voter profiling; FTC action in 2019",
+      "status": "Official finding",
+      "outcomeAsOf": "2019-12-06",
+      "summary": "The FTC found that Cambridge Analytica used deceptive practices to collect data from tens of millions of Facebook users for voter profiling and targeting.",
+      "aiRole": "This is a related data-analytics ethics case. The cited FTC account does not identify a particular AI model or demonstrate its effect on election results.",
+      "affected": "Facebook users whose information was collected. The source describes tens of millions; this record does not substitute an exact 87-million count.",
+      "outcome": "The FTC issued an opinion and final order against the company, including restrictions on privacy-related misrepresentations.",
+      "limitation": "The finding concerns deceptive data practices. It does not prove that AI changed the election result or that the 2016 election was a single technical AI incident. Facebook’s separate penalties are not assigned to Cambridge Analytica.",
+      "lesson": "Check consent and data provenance before using personal information to profile or target people.",
+      "sources": [
+        {
+          "publisher": "FTC",
+          "date": "2019-07-24",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/182-3107-cambridge-analytica-llc-matter",
+          "label": "Cambridge Analytica case summary and dated timeline",
+          "type": "Official enforcement record"
+        },
+        {
+          "publisher": "FTC",
+          "date": "2019-12-06",
+          "url": "https://www.ftc.gov/news-events/news/press-releases/2019/12/ftc-issues-opinion-order-against-cambridge-analytica-deceiving-consumers-about-collection-facebook",
+          "label": "FTC opinion and final-order announcement",
+          "type": "Official finding"
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-15",
+        "basis": "FTC case timeline and final-order announcement",
+        "supportLocators": {
+          "summaryAndAiRole": "Case Summary; December announcement opening",
+          "outcome": "December announcement, opinion and final-order paragraphs"
+        },
+        "numberAndScopeChecks": "Tens of millions is the source’s scope; no precise 87-million claim. Data analytics is not automatically a demonstrated AI model. Separate Facebook penalties excluded.",
+        "correction": "Added as a related data-analytics case with limited technical attribution.",
+        "remainingUncertainty": "The finding concerns deceptive data practices. It does not prove that AI changed the election result or that the 2016 election was a single technical AI incident. Facebook’s separate penalties are not assigned to Cambridge Analytica.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "itutorgroup",
+      "title": "Age rules automatically rejected qualified job applicants",
+      "entity": "iTutorGroup",
+      "category": "Discrimination",
+      "sector": "Employment",
+      "jurisdiction": "United States",
+      "technology": "Automated decision system",
+      "recordDate": "2023-09-11",
+      "eventPeriod": "Recruitment practices described in the EEOC lawsuit",
+      "status": "Settlement / final order",
+      "outcomeAsOf": "2023-09-11",
+      "summary": "The EEOC said hiring software automatically rejected women aged 55 or older and men aged 60 or older, affecting more than 200 qualified US applicants.",
+      "aiRole": "Programmed age-screening rules. The source does not establish a machine-learning model.",
+      "affected": "Older applicants for remote tutoring work in the United States.",
+      "outcome": "A $365,000 settlement provided compensation and measures against discriminatory hiring, with EEOC monitoring for at least five years.",
+      "limitation": "This is a related automation case and a settlement, not a trial verdict or proof that AI independently learned discrimination.",
+      "lesson": "Automating a discriminatory rule does not make the decision fair.",
+      "sources": [
+        {
+          "publisher": "US Equal Employment Opportunity Commission",
+          "date": "2023-09-11",
+          "url": "https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit",
+          "label": "iTutorGroup settlement announcement, original EEOC publication",
+          "type": "Official settlement announcement",
+          "reuseNote": "Agency-authored federal enforcement announcement, selected on the US government-work distinction in 17 USC §§101 and 105, not a website-wide licence. Independent factual summary; no third-party testimony, photographs or agency branding reproduced."
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-16",
+        "basis": "Original EEOC settlement announcement",
+        "supportLocators": {
+          "summaryAndAiRole": "Opening and programmed age-cutoff paragraphs",
+          "outcome": "Consent decree, relief and monitoring paragraphs"
+        },
+        "numberAndScopeChecks": "Women 55+, men 60+; more than 200 qualified US applicants; USD 365,000. Original release dated 11 September, not the 13 September hosted bulletin.",
+        "correction": "Restored using the original federal agency announcement; date corrected.",
+        "remainingUncertainty": "This is a related automation case and a settlement, not a trial verdict or proof that AI independently learned discrimination.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "robodebt",
+      "title": "Welfare debt failures led to calls for accountable automation",
+      "entity": "Australian Robodebt scheme",
+      "category": "Governance & oversight",
+      "sector": "Public services",
+      "jurisdiction": "Australia",
+      "technology": "Automated decision system",
+      "eventPeriod": "Robodebt scheme from 2015; Commission report in July 2023",
+      "status": "Official finding",
+      "summary": "The Commission’s founding document acknowledged harm from Robodebt and an invalid debt demand. Its final report recommended safeguards for automated government decisions.",
+      "aiRole": "Related government automation case. The report’s recommendations address review, transparency and scrutiny of algorithms; no LLM role is established.",
+      "affected": "People affected by welfare debt assessment and recovery.",
+      "outcome": "The report recommended plain-language explanations, clear review routes, independent scrutiny and monitoring for fairness and bias.",
+      "limitation": "Recommendations are not proof that reforms were implemented. This record does not establish individual criminal responsibility, compensation totals or a current legal status for every proceeding.",
+      "lesson": "Automating a process does not remove the need for lawful evidence and review.",
+      "sources": [
+        {
+          "publisher": "Royal Commission into the Robodebt Scheme",
+          "date": "2022-08-18",
+          "url": "https://robodebt.royalcommission.gov.au/publications/letters-patent",
+          "label": "Letters Patent establishing the inquiry",
+          "type": "Official inquiry mandate",
+          "reuseNote": "Source: Royal Commission into the Robodebt Scheme. © Commonwealth of Australia 2026. CC BY 4.0 except excluded third-party material and branding. Changed: condensed factual account with a separate editorial lesson. No report, exhibits or source media redistributed.",
+          "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "publisher": "Royal Commission into the Robodebt Scheme",
+          "date": "2023-07-07",
+          "url": "https://robodebt.royalcommission.gov.au/publications/report",
+          "label": "Report publication and recommendations 17.1–17.2",
+          "type": "Official report publication and recommendations",
+          "reuseNote": "Source: Royal Commission into the Robodebt Scheme. © Commonwealth of Australia 2026. CC BY 4.0 except excluded third-party material and branding. Changed: condensed factual account with a separate editorial lesson. No report, exhibits or source media redistributed.",
+          "reuseLicenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "recordDate": "2022-08-18",
+      "outcomeAsOf": "2023-07-07",
+      "review": {
+        "checkedOn": "2026-10-16",
+        "basis": "Commission’s HTML mandate and report recommendations",
+        "supportLocators": {
+          "summaryAndAiRole": "Letters Patent acknowledgements 1–6; report Chapter 17",
+          "outcome": "Report recommendations 17.1 and 17.2"
+        },
+        "numberAndScopeChecks": "Record date follows the 2022 mandate. July 2023 report page notes a corrected edition on 11 July. No compensation or victim total inferred.",
+        "correction": "Restored with a narrower account supported by Commission HTML; restrictive judicial speech removed.",
+        "remainingUncertainty": "Recommendations are not proof that reforms were implemented. This record does not establish individual criminal responsibility, compensation totals or a current legal status for every proceeding.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    },
+    {
+      "id": "andersen-image-lawsuit",
+      "title": "Artists challenged how image models used their work",
+      "entity": "Andersen and other artists / Stability AI and others",
+      "category": "Creative credit & authorship",
+      "sector": "Art and image generation",
+      "jurisdiction": "United States",
+      "technology": "AI image generation and training data",
+      "recordDate": "2024-08-12",
+      "eventPeriod": "US artists’ lawsuit; August 2024 dismissal-stage ruling",
+      "status": "Court decision",
+      "outcomeAsOf": "2024-08-12",
+      "summary": "Artists alleged that image-generation companies used their work without permission. An August 2024 court order let copyright claims proceed while dismissing other claims.",
+      "aiRole": "The allegations concern training images and the operation of Stable Diffusion and related image products.",
+      "affected": "Artists bringing the claims. This record gives no proven infringement or affected-artist total.",
+      "outcome": "Copyright claims survived dismissal. DMCA claims were dismissed with prejudice; unjust-enrichment claims could be amended. Other claims had different outcomes.",
+      "limitation": "Surviving dismissal is not a finding that infringement occurred. This records the August 2024 order, not the present status of the litigation or a final ruling on AI training.",
+      "lesson": "Check rights before using creative work. Separate an allegation from a court’s final finding.",
+      "sources": [
+        {
+          "publisher": "US District Court, ND California; court order reproduced by Justia",
+          "date": "2024-08-12",
+          "url": "https://law.justia.com/cases/federal/district-courts/california/candce/3%3A2023cv00201/407208/223/",
+          "label": "Order on motions to dismiss, document 223, 12 August 2024",
+          "type": "Court procedural decision",
+          "reuseNote": "Government-authored court order. Justia terms §18 distinguish US government documents from its own protected material. Only the order is used; no Justia summary, annotations, design, artwork or party submission reproduced."
+        }
+      ],
+      "review": {
+        "checkedOn": "2026-10-16",
+        "basis": "Government-authored order, document 223",
+        "supportLocators": {
+          "summaryAndAiRole": "Order pp. 1–5, background and pleading standard",
+          "outcome": "Order p. 33, conclusion; pp. 29–30, evidence and fair-use limits"
+        },
+        "numberAndScopeChecks": "No damages, infringement total or final liability claim. Multiple defendants and different claims distinguished.",
+        "correction": "Added as a dated procedural ruling, not a proven infringement case.",
+        "remainingUncertainty": "Surviving dismissal is not a finding that infringement occurred. This records the August 2024 order, not the present status of the litigation or a final ruling on AI training.",
+        "statusCoverage": "Dated source review; not an exhaustive search of all later proceedings.",
+        "interpretation": "Theme and lesson are editorial interpretation, not source findings."
+      },
+      "preparation": "AI-assisted factual summary and editorial interpretation; not independent expert verification.",
+      "rightsNote": "Publishers retain rights in original material. Citations are not publisher permission or endorsement. No comprehensive legal clearance is claimed."
+    }
+  ],
+  "provenance": {
+    "preparation": "AI-assisted research, summarisation, editorial writing and coding.",
+    "sourceUse": "Short factual summaries and citations to linked public sources. No third-party incident dataset was bulk imported.",
+    "verification": "Checks were performed with AI assistance and automated tests. No independent expert verification or comprehensive legal rights clearance is claimed.",
+    "rights": "Source publishers retain rights in their original material. Citations are not permission or endorsement. No publisher-specific permission has been requested or granted for this project.",
+    "corrections": "https://github.com/krrishvimal/ai-behind-the-headlines/issues"
+  },
+  "selectionPolicy": "Sources with unresolved or incompatible reuse conditions are held out of the published collection. This conservative editorial choice is not a finding of infringement. Licence conditions and third-party exceptions still apply."
+}
