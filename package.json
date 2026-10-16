@@ -1,10 +1,12 @@
 {
   "name": "ai-behind-the-headlines",
-  "version": "2.1.0",
+  "version": "3.1.0",
   "private": true,
   "type": "module",
-  "description": "An interactive explorer of 36 sourced AI and automation cases, with timelines, evidence and context.",
-  "engines": {"node": ">=22"},
+  "description": "An AI ethics learning guide with 30 curated AI and automation case records and reviewed source conditions.",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "node scripts/serve.mjs",
     "package:offline": "node scripts/package-local.mjs",

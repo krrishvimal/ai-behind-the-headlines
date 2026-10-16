@@ -1,42 +1,39 @@
 # AI Behind the Headlines
 
-A buildless educational explorer with 36 curated AI and related automated-system case records. All graphics derive from the included data; there are no simulated incident counts.
+An AI ethics learning website with five everyday task paths and 30 selected case records. Answer three questions to explore practical next steps and related evidence. This is an educational guide, not a news feed, ethical certification or exhaustive incident database.
 
-Version 2.1 includes the Belamy creative-credit controversy, 36 records, eight themes and source-review locators for each case. See AUDIT-RELEASE-2.md and BELAMY-REVIEW.md for checks and limits.
+Research, summaries, learning prompts and code were prepared with AI assistance. Software tests do not establish independent expert verification or comprehensive legal clearance. Source organisations do not endorse this project. Report corrections or rights concerns through [GitHub issues](https://github.com/krrishvimal/ai-behind-the-headlines/issues), without posting sensitive information.
 
-## Preview
+## Current release
 
-The stories section initially displays six matching cases. Show more cases reveals the next six; changing a filter or sort resets the cards to six. Charts and downloads always include the full relevant dataset. Browser checks covered 6→12→18→24→30→36, the final hidden button, search, no results, reset, sorting and mobile layout.
+Version 3.1.0 contains 30 case records. The earlier source-selection pass reduced 36 records to 24, then added three, giving 27. The 16 October 2026 follow-up restores iTutorGroup and Robodebt with new source packages and adds Andersen’s August 2024 procedural ruling, giving 30. Ten earlier records remain held out. No target count overrides evidence and source-selection requirements.
 
-On Windows, double-click `Open Headlines.cmd`, or run `node scripts/serve.mjs` from this directory. Open http://127.0.0.1:4174. Keep the server window open. No packages or API keys are required.
+Individual checks retain their actual dates; a collection update does not certify that every case was freshly checked or is legally current. The two restored cases concern related automation, not demonstrated LLM incidents. Andersen is a dated procedural ruling, not a finding of infringement.
 
-## Verify
+See CONTENT-REUSE-REVIEW.md for current rights findings and CANDIDATE-REVIEW.md for all 19 suggestions and their inclusion decisions. Earlier release reports are historical and their counts are superseded. No held-case archive is included in dist or the deployment package.
 
-Run `node scripts/package-local.mjs` then `node --test tests/*.test.mjs`. Run `node --check dist/app.mjs` after editing the browser code.
+## Guide and privacy
 
-## Data and editorial policy
+Five task paths cover hiring, studying, creative images, marketing and customer support. Suggestions respond to selected answers, including unknowns. They are independent educational interpretations informed by OECD, NIST, England's Department for Education, the US Copyright Office and FTC guidance. Geography and institutional limits are shown. No task is certified ethical, safe or legally compliant.
 
-`dist/data/cases.json` is the source of truth. Summaries paraphrase linked official records, developer statements, research investigations and labelled original reporting, not an imported third-party incident dataset. Court records reproduced by Justia and party-side accounts are labelled. Source rights remain with publishers; links are attribution, not endorsement.
+The guide runs locally in the browser with no AI API, account, document upload, analytics or answer persistence. It accepts predefined choices. Its text download includes selected answers, practical steps, contextual limits and source links. External source websites have their own privacy practices.
 
-- Reviewed on 15 October 2026. This is a manually curated snapshot, not a live feed or a full legal status service.
-- The public-record timeline uses the earliest publication included in each case's sources. This may be later than the event or its first media report. Event periods are separate text fields.
-- `outcomeAsOf` dates the outcome being described. Old proposed settlements and ongoing investigations are explicitly historical, not claims of present status.
-- Counts describe this selected collection only, including controversies and reversals. They do not establish worldwide prevalence, trends, victim totals, national safety rankings, or proven violations.
-- Each case has one editorial primary theme to avoid double counting. Categories and lessons are interpretation; sources supply the factual account.
-- AI claims are distinguished from verified technology. iTutorGroup is a rules-based automated-system case; Ring's wider security allegations are not all attributed to AI.
-- Rytr's reversed order is visibly marked. An earlier action must not be treated as still in force.
-- No severity score, financial-loss total, or model/company harm ranking is calculated. Penalties, forfeiture, investment sums and losses are different measures.
-- `review` provides manual source locators and number/scope checks. The audit is a record of the evidence reviewed, not independent fact certification or a guarantee of zero errors. It explicitly does not claim an exhaustive search of every later proceeding.
-- The UK 2019 report has unconfirmed technical attribution; Apple Card's investigated allegation was not substantiated; the Kramer record distinguishes a federal fine from a separate state acquittal. These are not all confirmed harmful uses.
+## Read the data carefully
 
-## Updating records
+The source of truth is dist/data/cases.json. Charts count the selected records, not victims or proven violations. Allegations, investigations, settlements, findings and reversals are distinguished. One primary editorial theme per record avoids double counting. Public record dates follow the earliest included source; event periods are separate. Outcome dates describe cited evidence, not a guarantee of the current legal status.
 
-Read the original source and look for later decisions or corrections. Add linked sources with exact dates; update `outcomeAsOf` only when a source supports the new outcome. Keep uncertainty and the organisation's dispute, where material. Do not change an allegation into a finding merely because a settlement exists. Run the checks, review the actual source wording and preview the case before publishing.
+Sources are selected using documented reuse conditions or explicit government-document distinctions; exceptions and attribution requirements still apply. No original article bodies, database imports, artwork, photographs, video or publisher logos are redistributed. Citations are not permission or endorsement. This is not a guarantee of zero errors or complete legal compliance.
 
-## Hosting
+## Run and verify
 
-The ready-to-serve website is in `dist`. Import this repository into Vercel with framework preset Other. The included `vercel.json` selects `dist`, with no installation or build command required. No API keys, accounts for visitors, or backend are required. GitHub stores the source; a live website requires a separate hosting deployment.
+Use Node.js 22 or later. Run npm start or double-click Open Headlines.cmd and visit http://127.0.0.1:4174. No packages, API keys or backend are required.
 
-Use Node.js 22 or later. Run `npm test` for the checks or `npm start` for a local preview. `npm run package:offline` creates `generated/AI Behind the Headlines.html`, a self-contained offline copy. Generated files and local hosting identity are excluded from Git.
+Run node scripts/build-audit.mjs, node scripts/review-content-reuse.mjs, node scripts/audit-guide.mjs and npm test after an editorial change. Check source wording and date scope as well as automated results. The tests cover 135 guide combinations, source and case references, counting, filtering, timeline layout, source-policy selection and offline packaging.
 
-Source summaries are original paraphrases. Linked publishers retain rights to their source material. No licence to redistribute third-party artwork or source articles is implied.
+The stories section begins with six matching cards and reveals six more at a time. Filters or sorting reset the cards. Charts and downloads include all relevant records.
+
+## Publishing
+
+The ready-to-serve files are in dist. The included vercel.json uses the Other framework preset and dist output directory with no installation or build command. GitHub stores the project; hosting is a separate deployment. Local generated archives, hosting identity, .env files, dependencies and ZIPs are excluded by .gitignore.
+
+The standalone copy is generated/AI Behind the Headlines.html. Publish only the reviewed deployment files. Do not upload generated/held-case-records.json or unrelated workspace files. Source licences do not grant rights to publisher assets or third-party exhibits.
