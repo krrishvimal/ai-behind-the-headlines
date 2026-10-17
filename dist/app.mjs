@@ -1,3 +1,4 @@
+import './global.mjs';
 import {themes,filterCases,countsBy,sortCases,csv,timelineLayout,timelineBounds} from './engine.mjs';
 import './guide.mjs';
 const $=s=>document.querySelector(s), escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
