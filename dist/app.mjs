@@ -34,8 +34,19 @@ function openCase(id,updateHash=true){const c=all.find(x=>x.id===id);if(!c)retur
  if(!$('#case-dialog').open)$('#case-dialog').showModal();$('#close-dialog').focus();if(updateHash)history.replaceState(null,'',`#case/${id}`);
  $('#copy-link').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);notify('Case link copied')}catch{notify('Copy the case URL from your address bar')}};
 }
+function revealLinkedDetails(hash=location.hash){
+ let id;try{id=decodeURIComponent(hash.slice(1))}catch{return}
+ const target=document.getElementById(id);
+ if(!target?.matches('details'))return;
+ target.open=true;
+ target.querySelector('summary')?.focus({preventScroll:true});
+ target.scrollIntoView({block:'start'});
+}
+document.addEventListener('click',e=>{const link=e.target.closest('a[href^="#"]');if(link)revealLinkedDetails(link.getAttribute('href'))});
+window.addEventListener('hashchange',()=>revealLinkedDetails());
 document.addEventListener('click',e=>{const step=e.target.closest('[data-step]');if(step){storyIndex=Number(step.dataset.step);renderStory()}const status=e.target.closest('[data-status]');if(status){$('#status').value=status.dataset.status;render()}const caseButton=e.target.closest('[data-case]');if(caseButton)openCase(caseButton.dataset.case);const themeButton=e.target.closest('[data-theme]');if(themeButton){state.category=themeButton.dataset.theme;render()}});
 $('#filters').onsubmit=e=>e.preventDefault();$('#filters').addEventListener('input',()=>data&&render());$('#filters').addEventListener('change',()=>data&&render());$('#filters').addEventListener('reset',()=>{state.category='';setTimeout(()=>data&&render(),0)});$('#sort').onchange=()=>data&&render();
 $('#close-dialog').onclick=()=>$('#case-dialog').close();$('#case-dialog').addEventListener('click',e=>{if(e.target===$('#case-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});$('#case-dialog').addEventListener('close',()=>{if(location.hash.startsWith('#case/'))history.replaceState(null,'','#explore');if(opener?.isConnected)opener.focus()});window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#case/'))openCase(location.hash.slice(6),false)});
 $('#export').onclick=()=>{if(!data)return;download('ai-headlines-reviewed-cases.csv',csv(all),'text/csv;charset=utf-8');notify(`Downloaded all ${all.length} records, including sources and limitations`)};
 try{const response=await fetch('data/cases.json');if(!response.ok)throw Error('Dataset unavailable');data=await response.json();all=data.cases;$('#total').textContent=all.length;$('#themes').textContent=Object.keys(countsBy(all,'category')).length;$('#regions').textContent=Object.keys(countsBy(all,'jurisdiction')).length;$('#review-date').textContent=date(data.reviewedOn);for(const [id,field]of [['region','jurisdiction'],['year','recordDate'],['status','status']]){const values=[...new Set(all.map(c=>field==='recordDate'?c[field].slice(0,4):c[field]))].sort();for(const value of values){const option=document.createElement('option');option.value=value;option.textContent=value;$('#'+id).append(option)}}render();if(location.hash.startsWith('#case/'))openCase(location.hash.slice(6),false)}catch(e){$('#visible-count').textContent='Could not load data';$('#empty').hidden=false;$('#empty').textContent='The collection could not load. Please reload, or download the dataset below.';console.error(e)}
+revealLinkedDetails();
